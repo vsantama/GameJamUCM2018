@@ -225,11 +225,6 @@ GameObject:
   m_PrefabParentObject: {fileID: 1512363765407886, guid: ebc0e0c2afa6e454aad885d0f8b1736a,
     type: 2}
   m_PrefabInternal: {fileID: 494677360}
---- !u!4 &1042526091 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4542519893572630, guid: ebc0e0c2afa6e454aad885d0f8b1736a,
-    type: 2}
-  m_PrefabInternal: {fileID: 494677360}
 --- !u!1 &1130360865
 GameObject:
   m_ObjectHideFlags: 0
@@ -324,17 +319,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targets:
-  - {fileID: 1362912611}
-  - {fileID: 1042526091}
+  - {fileID: 0}
+  - {fileID: 0}
   offset: {x: 0, y: 0, z: -10}
   distance: 0
   camSize: 5
   maxZoom: 10
---- !u!4 &1362912611 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4326376525017236, guid: e780189830cc1dd4ca7d57c2962d239d,
-    type: 2}
-  m_PrefabInternal: {fileID: 1917287669}
 --- !u!1001 &1917287669
 Prefab:
   m_ObjectHideFlags: 0
@@ -344,11 +334,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4326376525017236, guid: e780189830cc1dd4ca7d57c2962d239d, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.97
+      value: -6.2
       objectReference: {fileID: 0}
     - target: {fileID: 4326376525017236, guid: e780189830cc1dd4ca7d57c2962d239d, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.46
+      value: 0.6
       objectReference: {fileID: 0}
     - target: {fileID: 4326376525017236, guid: e780189830cc1dd4ca7d57c2962d239d, type: 2}
       propertyPath: m_LocalPosition.z

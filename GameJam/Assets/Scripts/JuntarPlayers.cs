@@ -6,9 +6,11 @@ public class JuntarPlayers : MonoBehaviour {
 
     public GameObject player1;
     public GameObject playerSolo;
+    Vector3 direccion;
+    public Vector3 normalizado;
 
-	// Use this for initialization
-	void Start () {
+    // Use this for initialization
+    void Start () {
 		//Asignar automaticamente el GO
 	}
 	
@@ -19,6 +21,9 @@ public class JuntarPlayers : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
+
+        direccion = player1.transform.position - collision.gameObject.transform.position;
+        normalizado = direccion.normalized; //DIRECION EN LA QUE CHOCAN
 
         //PASAR DATOS DE PLAYER 1 A PLAYER 2
         playerSolo.transform.position = (player1.transform.position + collision.gameObject.transform.position) / 2;
