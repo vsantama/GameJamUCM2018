@@ -22,9 +22,9 @@ public class JuntarPlayers : MonoBehaviour {
     {
         Debug.Log("COLLISION");
         //PASAR DATOS DE PLAYER 1 A PLAYER 2
-        playerSoloPrefab.transform.position = player1.transform.position;
-        Instantiate(playerSoloPrefab);
+        playerSoloPrefab.transform.position = (player1.transform.position + player2.transform.position) / 2;
         Destroy(player1);
         Destroy(player2);
+        Instantiate(playerSoloPrefab);
     }
 }
