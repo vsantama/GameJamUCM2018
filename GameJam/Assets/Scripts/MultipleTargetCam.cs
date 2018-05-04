@@ -18,7 +18,7 @@ public class MultipleTargetCam : MonoBehaviour {
     }
     private void LateUpdate()
     {
-        GetTargetsOnScreen();
+       // GetTargetsOnScreen();
         Move();
         Zoom();
     }
@@ -51,7 +51,11 @@ public class MultipleTargetCam : MonoBehaviour {
 
     void GetTargetsOnScreen()
     {
-
+        for(int i = 0; i < 3; i++)
+        {
+            targets[i] = GameObject.FindGameObjectWithTag("Player").transform;
+        }
+       
     }
     Vector3 GetCenterPoint()
     {
