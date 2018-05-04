@@ -6,10 +6,10 @@ public class MultipleTargetCam : MonoBehaviour {
 
     public List<Transform> targets;
     private Camera mainCam;
-    public Vector3 offset;
-    public float camSize = 5f;
+    public Vector3 offset = new Vector3(0,0,-10);
     public float distance;
-    public float maxZoom = 10;
+    public float camSize = 5f;
+    public float maxZoom = 10f;
 
     private void Start()
     {
