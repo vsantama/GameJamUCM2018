@@ -19,7 +19,7 @@ public class JuntarPlayers : MonoBehaviour {
 
     private void OnCollisionEnter(Collision collision)
     {
-        Debug.Log("COLLISION");
+
         //PASAR DATOS DE PLAYER 1 A PLAYER 2
         playerSolo.transform.position = (player1.transform.position + collision.gameObject.transform.position) / 2;
         Destroy(player1);

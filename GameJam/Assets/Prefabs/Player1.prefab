@@ -38,9 +38,9 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 4240098274540002}
-  - component: {fileID: 114118666815208630}
   - component: {fileID: 65407444596478082}
   - component: {fileID: 54659836908242994}
+  - component: {fileID: 114258428866066540}
   m_Layer: 0
   m_Name: Collider
   m_TagString: Untagged
@@ -158,7 +158,7 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &114118666815208630
+--- !u!114 &114258428866066540
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -169,8 +169,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a9122f7700c110a4ba84c207e670b32e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 1487101566158374}
-  playerSolo: {fileID: 1512363765407886, guid: 8ca9f0a593ab9be43b7592f4a133de97, type: 2}
+  player1: {fileID: 0}
+  playerSolo: {fileID: 0}
 --- !u!114 &114930975916125152
 MonoBehaviour:
   m_ObjectHideFlags: 1

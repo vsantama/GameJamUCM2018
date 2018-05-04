@@ -38,7 +38,6 @@ public class MultipleTargetCam : MonoBehaviour {
         {
             distance = -distance;
         }
-        Debug.Log(distance);
         if(distance > 20)
         {
             mainCam.orthographicSize = Mathf.Lerp(mainCam.orthographicSize, maxZoom, Time.deltaTime);
