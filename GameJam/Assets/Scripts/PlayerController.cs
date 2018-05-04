@@ -12,15 +12,15 @@ public class PlayerController : MonoBehaviour {
 
     void Move(float vel)
     {
-        if(Input.GetKey(teclas[0]))
-        {
-            transform.Translate(-vel * Time.deltaTime, 0, 0, Space.World);
-        }
-        else if (Input.GetKey(teclas[1]))
+        if (Input.GetKey(teclas[1]))
         {
             transform.Translate(vel * Time.deltaTime, 0, 0, Space.World);
         }
-        if (Input.GetKey(teclas[2]))
+        else if(Input.GetKey(teclas[0]))
+        {
+            transform.Translate(-vel * Time.deltaTime, 0, 0, Space.World);
+        }
+        else if (Input.GetKey(teclas[2]))
         {
             transform.Translate(0, vel * Time.deltaTime, 0, Space.World);
         }
