@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class GiroPlano : MonoBehaviour {
     //Añadir esto a el gameObjet a girar
-    Vector3 giro = new Vector3(0, 45, 0); //Girar 90 en Y
+    Vector3 giro = new Vector3(0, 0, 90); //Girar 90 en Y
 
 	void Start () {
        
