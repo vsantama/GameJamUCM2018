@@ -50,7 +50,7 @@ public class BuildLevelFromFile : MonoBehaviour
                     Object prefab = prefabs[c];
                     if (prefab != null)
                     {
-                        GameObject o = createObject(prefab, root, new Vector3((float)x / 2 - 0.5f, 0, -((float)y / 2 - 0.5f)));
+                        GameObject o = createObject(prefab, root, new Vector3((float)x / 2 - 0.5f,-((float)y / 2 - 0.5f), 0));
                         if ((x % 2 == 0) && (y % 2 == 1))
                             o.transform.Rotate(new Vector3(0, 90, 0));
                     }
@@ -96,9 +96,9 @@ public class BuildLevelFromFile : MonoBehaviour
 
     static PrefabInfo[] all = new PrefabInfo[] {
         new PrefabInfo('L', "Assets/Prefabs/Test/Dark.prefab"),
-        new PrefabInfo('p', "Assets/Prefabs/Test/ObjDark.prefab"),
-        new PrefabInfo('P', "Assets/Prefabs/Test/Light.prefab"),
-        new PrefabInfo('D', "Assets/Prefabs/Test/ObjLight.prefab")
+        new PrefabInfo('1', "Assets/Prefabs/Player1.prefab"),
+        new PrefabInfo('2', "Assets/Prefabs/Player2.prefab"),
+        new PrefabInfo('D', "Assets/Prefabs/Test/ObjLight.prefab"),
     };
     static Dictionary<char, Object> prefabs;
     private static void initPrefabsBD()
