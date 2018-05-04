@@ -123,5 +123,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfb2428fd85791547b63ce13a85ca6ca, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  velocity: 20
+  velocity: 7
   teclas: 11010000120100001301000014010000
