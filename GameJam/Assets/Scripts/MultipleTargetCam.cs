@@ -9,14 +9,16 @@ public class MultipleTargetCam : MonoBehaviour {
     public Vector3 offset;
     public float camSize = 5f;
     public float distance;
-
+    public float maxZoom = 10;
 
     private void Start()
     {
+        
         mainCam = GetComponent<Camera>();
     }
     private void LateUpdate()
     {
+        GetTargetsOnScreen();
         Move();
         Zoom();
     }
@@ -39,8 +41,17 @@ public class MultipleTargetCam : MonoBehaviour {
         Debug.Log(distance);
         if(distance > 20)
         {
-            mainCam.orthographicSize = Mathf.Lerp(mainCam.orthographicSize, 10, Time.deltaTime);
+            mainCam.orthographicSize = Mathf.Lerp(mainCam.orthographicSize, maxZoom, Time.deltaTime);
         }
+        if(distance < 20)
+        {
+            mainCam.orthographicSize = Mathf.Lerp(mainCam.orthographicSize, camSize,  Time.deltaTime);
+        }
+    }
+
+    void GetTargetsOnScreen()
+    {
+
     }
     Vector3 GetCenterPoint()
     {
