@@ -6,7 +6,9 @@ public class SepararPlayers : MonoBehaviour {
 
     public GameObject player1;
     public GameObject player2;
-    public GameObject playerSoloPrefab;
+    public GameObject playerSolo;
+
+    Vector3 pos;
 
     // Use this for initialization
     void Start () {
@@ -20,12 +22,18 @@ public class SepararPlayers : MonoBehaviour {
 
     void Separar()
     {
-        if (Input.GetKey(KeyCode.Space))
+        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
         {
-            player1.transform.position = playerSoloPrefab.transform.position / 2;
+            pos = new Vector3(playerSolo.transform.position.x - 0.8f, playerSolo.transform.position.y, playerSolo.transform.position.z);
+            player1.transform.position = pos;
+
+            pos = new Vector3(playerSolo.transform.position.x + 0.8f, playerSolo.transform.position.y, playerSolo.transform.position.z);
+            player2.transform.position = pos;
+
             Instantiate(player1);
             Instantiate(player2);
-            Destroy(playerSoloPrefab);
+
+            Destroy(playerSolo);
         }
     }
 }

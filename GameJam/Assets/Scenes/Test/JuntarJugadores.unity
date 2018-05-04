@@ -318,12 +318,20 @@ Prefab:
         type: 2}
       propertyPath: player1
       value: 
-      objectReference: {fileID: 150836274}
+      objectReference: {fileID: 1487101566158374, guid: e780189830cc1dd4ca7d57c2962d239d,
+        type: 2}
     - target: {fileID: 114539587543969800, guid: f85a118ece198e64a9962b0fbfd9c1d1,
         type: 2}
       propertyPath: player2
       value: 
-      objectReference: {fileID: 1663076257}
+      objectReference: {fileID: 1512363765407886, guid: ebc0e0c2afa6e454aad885d0f8b1736a,
+        type: 2}
+    - target: {fileID: 114539587543969800, guid: f85a118ece198e64a9962b0fbfd9c1d1,
+        type: 2}
+      propertyPath: playerSoloPrefab
+      value: 
+      objectReference: {fileID: 1512363765407886, guid: 8ca9f0a593ab9be43b7592f4a133de97,
+        type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: f85a118ece198e64a9962b0fbfd9c1d1, type: 2}
   m_IsPrefabParent: 0

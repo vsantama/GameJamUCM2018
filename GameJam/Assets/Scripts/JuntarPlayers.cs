@@ -5,8 +5,7 @@ using UnityEngine;
 public class JuntarPlayers : MonoBehaviour {
 
     public GameObject player1;
-    public GameObject player2;
-    public GameObject playerSoloPrefab;
+    public GameObject playerSolo;
 
 	// Use this for initialization
 	void Start () {
@@ -22,9 +21,9 @@ public class JuntarPlayers : MonoBehaviour {
     {
         Debug.Log("COLLISION");
         //PASAR DATOS DE PLAYER 1 A PLAYER 2
-        playerSoloPrefab.transform.position = (player1.transform.position + player2.transform.position) / 2;
+        playerSolo.transform.position = (player1.transform.position + collision.gameObject.transform.position) / 2;
         Destroy(player1);
-        Destroy(player2);
-        Instantiate(playerSoloPrefab);
+        Destroy(collision.gameObject);
+        Instantiate(playerSolo);
     }
 }
