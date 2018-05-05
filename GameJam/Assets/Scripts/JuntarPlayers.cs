@@ -19,22 +19,30 @@ public class JuntarPlayers : MonoBehaviour {
 		
 	}
 
-    private void OnCollisionEnter(Collision collision)
+    private void OnCollisionEnter2D(Collision2D collision)
     {
+        if (collision.gameObject.tag == "Player")
+        {
+            direccion = transform.position - collision.gameObject.transform.position;
+            normalizado = direccion.normalized; //DIRECION EN LA QUE CHOCAN
 
-        direccion = gameObject.transform.position - collision.gameObject.transform.position;
-        normalizado = direccion.normalized; //DIRECION EN LA QUE CHOCAN
+            direccion = gameObject.transform.position - collision.gameObject.transform.position;
+            normalizado = direccion.normalized; //DIRECION EN LA QUE CHOCAN
 
-        // Mensajes para la camara
-        mainCamera.BroadcastMessage("erasePlayerFromCamera", this.gameObject.transform, SendMessageOptions.DontRequireReceiver);
-        mainCamera.BroadcastMessage("erasePlayerFromCamera", collision.transform, SendMessageOptions.DontRequireReceiver);
-        
+            // Mensajes para la camara
+            mainCamera.BroadcastMessage("erasePlayerFromCamera", this.gameObject.transform, SendMessageOptions.DontRequireReceiver);
+            mainCamera.BroadcastMessage("erasePlayerFromCamera", collision.transform, SendMessageOptions.DontRequireReceiver);
 
-        //PASAR DATOS DE PLAYER 1 A PLAYER 2
-        playerSolo.transform.position = (gameObject.transform.position + collision.gameObject.transform.position) / 2;
-        Destroy(this.gameObject);
-        Destroy(collision.gameObject);
-        GameObject aux = Instantiate(playerSolo);
-        mainCamera.BroadcastMessage("addTargetToCamera", aux.transform, SendMessageOptions.DontRequireReceiver);
+
+            //PASAR DATOS DE PLAYER 1 A PLAYER 2
+            playerSolo.transform.position = (gameObject.transform.position + collision.gameObject.transform.position) / 2;
+
+            Destroy(this.gameObject);
+            Destroy(collision.gameObject);
+
+            GameObject aux = Instantiate(playerSolo);
+
+            mainCamera.BroadcastMessage("addTargetToCamera", aux.transform, SendMessageOptions.DontRequireReceiver);
+        }
     }
 }
