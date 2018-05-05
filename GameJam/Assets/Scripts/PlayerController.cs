@@ -5,39 +5,47 @@ public class PlayerController : MonoBehaviour {
     public float velocity = 15f;
     public KeyCode[] teclas = new KeyCode[4];
     Vector3 pos;
+    public Rigidbody2D rb;
 
     void Start()
     {
+        rb = GetComponent<Rigidbody2D>();
         pos = transform.position;
     }
     // Update is called once per frame
-    void Update () {
+    void FixedUpdate () {
         Move(velocity);
 	}
 
     void Move(float vel)
     {
-        if (Input.GetKey(teclas[0]) && transform.position == pos)
+        rb.velocity =new  Vector3(0, 0, 0);
+
+        if (Input.GetKey(teclas[0]))
         {
             //transform.Translate(0, vel * Time.deltaTime, 0, Space.World);
-            pos += Vector3.up;
+            //pos += Vector3.up;
+            rb.velocity = Vector2.up * vel * Time.deltaTime * 50f;
         }
-        else if (Input.GetKey(teclas[1]) && transform.position == pos)
+        else if (Input.GetKey(teclas[1]))
         {
+    
             //transform.Translate(0, -vel * Time.deltaTime, 0, Space.World);
-            pos += Vector3.down;
+            //pos += Vector3.down;
+            rb.velocity = Vector2.down * vel * Time.deltaTime * 50f;
         }
-        if (Input.GetKey(teclas[2]) && transform.position == pos)
+        if (Input.GetKey(teclas[2]) )
         {
             //transform.Translate(vel * Time.deltaTime, 0, 0, Space.World);
-            pos += Vector3.right;
+            //pos += Vector3.right;
+            rb.velocity = Vector2.right * vel * Time.deltaTime * 50f;
         }
-        else if(Input.GetKey(teclas[3]) && transform.position == pos)
+        else if(Input.GetKey(teclas[3]) )
         {
             //transform.Translate(-vel * Time.deltaTime, 0, 0, Space.World);
-            pos += Vector3.left;
+            //pos += Vector3.left;
+            rb.velocity = Vector2.left * vel * Time.deltaTime * 50f;
         }
-
-        transform.position = Vector3.MoveTowards(transform.position, pos, Time.deltaTime * vel);
+        //transform.position = Vector3.MoveTowards(transform.position, pos, Time.deltaTime * vel);
     }
 }

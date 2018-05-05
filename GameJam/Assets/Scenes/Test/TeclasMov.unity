@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -122,11 +122,11 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4014040176862138, guid: ae775ab6fb4e82949a589fa4d6348603, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.51
+      value: 1.263
       objectReference: {fileID: 0}
     - target: {fileID: 4014040176862138, guid: ae775ab6fb4e82949a589fa4d6348603, type: 2}
       propertyPath: m_LocalPosition.y
-      value: -0.5
+      value: -0.335
       objectReference: {fileID: 0}
     - target: {fileID: 4014040176862138, guid: ae775ab6fb4e82949a589fa4d6348603, type: 2}
       propertyPath: m_LocalPosition.z
@@ -157,7 +157,21 @@ Prefab:
       propertyPath: m_Simulated
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 50245662769459848, guid: ae775ab6fb4e82949a589fa4d6348603,
+        type: 2}
+      propertyPath: m_BodyType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4014040176862138, guid: ae775ab6fb4e82949a589fa4d6348603, type: 2}
+      propertyPath: m_LocalScale.x
+      value: 6.525347
+      objectReference: {fileID: 0}
+    - target: {fileID: 4014040176862138, guid: ae775ab6fb4e82949a589fa4d6348603, type: 2}
+      propertyPath: m_LocalScale.y
+      value: 1.330576
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 50245662769459848, guid: ae775ab6fb4e82949a589fa4d6348603, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: ae775ab6fb4e82949a589fa4d6348603, type: 2}
   m_IsPrefabParent: 0
 --- !u!1001 &922546865
@@ -169,7 +183,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4256535791065500, guid: 91d2faa81274cf143bcad18e972a64c5, type: 2}
       propertyPath: m_LocalPosition.x
-      value: -1.51
+      value: -1.5
       objectReference: {fileID: 0}
     - target: {fileID: 4256535791065500, guid: 91d2faa81274cf143bcad18e972a64c5, type: 2}
       propertyPath: m_LocalPosition.y
