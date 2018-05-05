@@ -21,6 +21,7 @@ GameObject:
   - component: {fileID: 4166304468142658}
   - component: {fileID: 212692529182897616}
   - component: {fileID: 114291318597003860}
+  - component: {fileID: 58352542509193630}
   m_Layer: 10
   m_Name: Corazon
   m_TagString: Untagged
@@ -43,7 +44,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!58 &58352542509193630
 CircleCollider2D:
-  m_ObjectHideFlags: 1
+  m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1656315509499384}

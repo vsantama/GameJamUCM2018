@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class SliderManager : MonoBehaviour
 {
-    
+    public int CurrentLevel;
     public float tiempo = 30f; //TIEMPO EN SEGUNDOS PARA MORIR
     public float tiempoRecarga = 10f;
     public Slider sliderBlanco;
@@ -28,7 +28,7 @@ public class SliderManager : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(managerBlanco.tieneCorazon == true && managerNegro.tieneCorazon == false)
+        if(managerBlanco.tieneCorazon && !managerNegro.tieneCorazon)
         {
             sliderNegro.value -= Time.deltaTime / tiempo; //Disminuye vida
             if(sliderBlanco.value != 0)
@@ -36,7 +36,7 @@ public class SliderManager : MonoBehaviour
             sliderBlanco.value -= Time.deltaTime / tiempoRecarga; //Aumenta vida
             }
         }
-        else if(managerNegro.tieneCorazon == true && managerBlanco.tieneCorazon == false)
+        else if(managerNegro.tieneCorazon && !managerBlanco.tieneCorazon)
         {
             sliderBlanco.value += Time.deltaTime / tiempo; //Disminuye vida 
             if(sliderNegro.value != 1)
@@ -47,8 +47,18 @@ public class SliderManager : MonoBehaviour
         if(sliderNegro.value == 0 || sliderBlanco.value == 1)
         {
             //REINICIAR LEVEL
+           Invoke("ReiniciarNivel", 2f);
+        }
+    }
+        void ReiniciarNivel()
+        {
             SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
         }
 
+        void PasarSiguienteNivel()
+    {
+        string nextScene = "Nivel" + (CurrentLevel + 1).ToString();
+        CurrentLevel++;
+        SceneManager.LoadScene(nextScene);
     }
 }
