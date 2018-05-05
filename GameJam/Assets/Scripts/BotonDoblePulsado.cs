@@ -4,11 +4,16 @@ public class BotonDoblePulsado : Boton
 {
 
     public GameObject botonGemelo;
-    bool otroBoton = false;
+    protected bool otroBoton = false;
 
-    void activarGemelo()
+    virtual protected void activarGemelo()
     {
         otroBoton = true;
+    }
+
+    virtual protected void desactivarGemelo()
+    {
+        otroBoton = false;
     }
 
     override public void OnTriggerEnter(Collider other)
