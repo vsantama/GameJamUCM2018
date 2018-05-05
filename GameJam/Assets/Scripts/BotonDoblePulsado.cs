@@ -16,7 +16,7 @@ public class BotonDoblePulsado : Boton
         otroBoton = false;
     }
 
-    override public void OnTriggerEnter(Collider other)
+    override public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {

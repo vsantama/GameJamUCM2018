@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class BotonDobleMantenido : BotonDoblePulsado {
 
-    virtual public void OnTriggerExit(Collider other)
+    virtual public void OnTriggerExit2D(Collider2D other)
     {
         if (other.tag == "Player")
         {

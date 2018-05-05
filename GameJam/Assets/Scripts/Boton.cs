@@ -5,7 +5,7 @@ public class Boton : MonoBehaviour {
     public GameObject[] targetAccion = new GameObject[1];
 
 
-    virtual public void OnTriggerEnter(Collider other)
+    virtual public void OnTriggerEnter2D(Collider2D other)
     {
         if (other.tag == "Player")
         {
