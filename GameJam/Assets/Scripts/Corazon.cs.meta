@@ -5,7 +5,14 @@ licenseType: Free
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - separarScript: {instanceID: 0}
+  - corazon: {fileID: 21300000, guid: f238c4fb2f45a654da1a33fe373aefab, type: 3}
+  - corazonManager: {instanceID: 0}
+  - manager1: {instanceID: 0}
+  - manager2: {instanceID: 0}
+  - player1: {instanceID: 0}
+  - player2: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 
