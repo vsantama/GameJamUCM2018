@@ -20,22 +20,22 @@ public class PlayerSoloController : MonoBehaviour
 
     void Move(float vel)
     {
-        if (Input.GetKey(teclas1[0]) && Input.GetKey(teclas2[0]) && transform.position == pos)
+        if ((Input.GetKey(teclas1[0]) || Input.GetKey(teclas2[0])) && transform.position == pos)
         {
             //.Translate(0, vel * Time.deltaTime, 0, Space.World);
             pos += Vector3.up;
         }
-        else if (Input.GetKey(teclas1[1]) && Input.GetKey(teclas2[1]) && transform.position == pos)
+        if ((Input.GetKey(teclas1[1]) || Input.GetKey(teclas2[1])) && transform.position == pos)
         {
             //transform.Translate(0, -vel * Time.deltaTime, 0, Space.World);
             pos += Vector3.down;
         }
-        if (Input.GetKey(teclas1[2]) && Input.GetKey(teclas2[2]) && transform.position == pos)
+        if ((Input.GetKey(teclas1[2]) || Input.GetKey(teclas2[2])) && transform.position == pos)
         {
             //transform.Translate(vel * Time.deltaTime, 0, 0, Space.World);
             pos += Vector3.right;
         }
-        else if (Input.GetKey(teclas1[3]) && Input.GetKey(teclas2[3]) && transform.position == pos)
+        if ((Input.GetKey(teclas1[3]) || Input.GetKey(teclas2[3])) && transform.position == pos)
         {
             //transform.Translate(-vel * Time.deltaTime, 0, 0, Space.World);
             pos += Vector3.left;
