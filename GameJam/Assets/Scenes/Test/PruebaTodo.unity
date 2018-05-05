@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -155,6 +155,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 91d2faa81274cf143bcad18e972a64c5, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &669107713 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4908039935447454, guid: 159fd0cd4ff195443a04e176a26cfa81,
+    type: 2}
+  m_PrefabInternal: {fileID: 1084016141}
 --- !u!1 &901731602
 GameObject:
   m_ObjectHideFlags: 0
@@ -356,9 +361,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targets:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1489594131}
+  - {fileID: 669107713}
   offset: {x: 0, y: 0, z: -10}
   distance: 0
   camSize: 5
   maxZoom: 10
+--- !u!4 &1489594131 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4256535791065500, guid: 91d2faa81274cf143bcad18e972a64c5,
+    type: 2}
+  m_PrefabInternal: {fileID: 135540448}
