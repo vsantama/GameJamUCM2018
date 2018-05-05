@@ -314,12 +314,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targets:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 2031948749}
+  - {fileID: 1530042383}
   offset: {x: 0, y: 0, z: -10}
   distance: 0
   camSize: 5
   maxZoom: 10
+--- !u!4 &1530042383 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4542519893572630, guid: ebc0e0c2afa6e454aad885d0f8b1736a,
+    type: 2}
+  m_PrefabInternal: {fileID: 494677360}
 --- !u!1001 &1915747220
 Prefab:
   m_ObjectHideFlags: 0
@@ -366,3 +371,8 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 9a32fdfc98985f54fbee84e166eb73f0, type: 2}
   m_IsPrefabParent: 0
+--- !u!4 &2031948749 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4638155160489680, guid: 9a32fdfc98985f54fbee84e166eb73f0,
+    type: 2}
+  m_PrefabInternal: {fileID: 1915747220}

@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class MultipleTargetCam : MonoBehaviour {
 
-    //public List<Transform> targets;
-    public GameObject[] targets;
+    public List<Transform> targets;
     private Camera mainCam;
     public Vector3 offset = new Vector3(0,0,-10);
     public float distance;
@@ -18,7 +17,6 @@ public class MultipleTargetCam : MonoBehaviour {
     }
     private void LateUpdate()
     {
-        GetTargetsOnScreen();
         Move();
         Zoom();
     }
@@ -30,10 +28,11 @@ public class MultipleTargetCam : MonoBehaviour {
         Vector3 newPos = centerPoint + offset;
 
         transform.position = newPos;
+        Debug.Log(centerPoint);
     }
     void Zoom()
     {
-        if(targets.Length > 1)
+        if(targets.Count > 1)
         {
 
             distance = (targets[0].transform.position.x - targets[1].transform.position.x);
@@ -52,13 +51,19 @@ public class MultipleTargetCam : MonoBehaviour {
         }
     }
 
-    void GetTargetsOnScreen()
+    void erasePlayerFromCamera(Transform player)
     {
-            targets = GameObject.FindGameObjectsWithTag("Player");
+        targets.Remove(player);
     }
+
+    void addTargetToCamera(Transform player)
+    {
+        targets.Add(player);
+    }
+
     Vector3 GetCenterPoint()
     {
-        if(targets.Length == 1)
+        if(targets.Count == 1)
         {
             return targets[0].transform.position;
         }
