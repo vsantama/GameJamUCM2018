@@ -93,12 +93,12 @@ public class BuildLevelFromFile : MonoBehaviour
     }
 
     static PrefabInfo[] all = new PrefabInfo[] {
-        new PrefabInfo('M', "Assets/Prefabs/Muro.prefab"),
-        new PrefabInfo('l', "Assets/Prefabs/MuroLuz.prefab"), // para el de luz
-        new PrefabInfo('o', "Assets/Prefabs/MuroOscuro.prefab"), // para el de oscuridad
-        new PrefabInfo('1', "Assets/Prefabs/2DPlayer1.prefab"),
-        new PrefabInfo('2', "Assets/Prefabs/2DPlayer2.prefab"),
-        new PrefabInfo('3', "Assets/Prefabs/2DPlayerSolo.prefab"),
+        new PrefabInfo('M', "Assets/Prefabs/Muros/Muro.prefab"),
+        new PrefabInfo('l', "Assets/Prefabs/Muros/MuroLuz.prefab"), // para el de luz
+        new PrefabInfo('o', "Assets/Prefabs/Muros/MuroOscuro.prefab"), // para el de oscuridad
+        new PrefabInfo('1', "Assets/Prefabs/Player/2DPlayer1.prefab"),
+        new PrefabInfo('2', "Assets/Prefabs/Player/2DPlayer2.prefab"),
+        new PrefabInfo('3', "Assets/Prefabs/Player/2DPlayerSolo.prefab"),
         new PrefabInfo('B', "Assets/Prefabs/Botones/BotonUnClick.prefab"),
         new PrefabInfo('L', "Assets/Prefabs/Botones/BotonUnClickLuz.prefab"), // el de luz
         new PrefabInfo('O', "Assets/Prefabs/Botones/BotonUnClickOscuro.prefab"), // el de oscuro
@@ -109,7 +109,7 @@ public class BuildLevelFromFile : MonoBehaviour
         new PrefabInfo('d', "Assets/Prefabs/Botones/BotonDobleMantenido.prefab"), // doble mantenido
         new PrefabInfo('c',"Assets/Prefabs/Checkpoint.prefab" ),
         new PrefabInfo('p', "Assets/Prefabs/Puerta.prefab"),
-        new PrefabInfo('h', "Assets/Prefabs/MuroCorazon")
+        new PrefabInfo('h', "Assets/Prefabs/Muros/MuroCorazon")
 
     };
     static Dictionary<char, Object> prefabs;

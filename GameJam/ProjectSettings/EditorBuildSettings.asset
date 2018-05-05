@@ -5,9 +5,9 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
-    path: Assets/Scenes/Test/PruebaTodo 1.unity
-    guid: 4967f99c57d0ecb47b30be9492e715b8
-  - enabled: 0
-    path: Assets/Scenes/Test/JuntarJugadores.unity
-    guid: 5c38f1cafd7613942be291a9d0c0c44f
+  - enabled: 1
+    path: Assets/Scenes/MenuInicio.unity
+    guid: 27fba14ddb367a649b0591bf07c57bca
+  - enabled: 1
+    path: Assets/Scenes/MenuPausa.unity
+    guid: e003f86ab130ac345843cc135e618575
