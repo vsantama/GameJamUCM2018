@@ -135,6 +135,7 @@ MonoBehaviour:
   velocity: 7
   teclas: 77000000730000006400000061000000
   rb: {fileID: 0}
+  ultimaTecla: 0
 --- !u!114 &114490410569843194
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -159,9 +160,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f9e1c5a87455e040a60a5f634ee531d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  player1: {fileID: 1380493712335792}
-  player2: {fileID: 1949042840033418, guid: 91d2faa81274cf143bcad18e972a64c5, type: 2}
-  corazon: {fileID: 1656315509499384, guid: 4aaf9b55d4ad284429d25fdcbd7e70cd, type: 2}
+  rb: {fileID: 0}
+  vel: 5
   shiftIzq: 0
   shiftPressed: 0
 --- !u!212 &212439854160186938

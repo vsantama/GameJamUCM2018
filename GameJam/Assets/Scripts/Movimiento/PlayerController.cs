@@ -6,6 +6,8 @@ public class PlayerController : MonoBehaviour {
     public KeyCode[] teclas = new KeyCode[4];
     public Rigidbody2D rb;
 
+    public KeyCode ultimaTecla;
+
     Animator anim;
 
     void Start()
@@ -34,24 +36,28 @@ public class PlayerController : MonoBehaviour {
             anim.SetBool("AndarArriba", true);
             anim.SetBool("Idle", false);
             rb.velocity = Vector2.up * vel * Time.deltaTime * 50f;
+            ultimaTecla = teclas[0];
         }
         else if (Input.GetKey(teclas[1]))
         {
             anim.SetBool("AndarAbajo", true);
             anim.SetBool("Idle", false);
             rb.velocity = Vector2.down * vel * Time.deltaTime * 50f;
+            ultimaTecla = teclas[1];
         }
         if (Input.GetKey(teclas[2]))
         {
             anim.SetBool("AndarDerecha", true);
             anim.SetBool("Idle", false);
             rb.velocity = Vector2.right * vel * Time.deltaTime * 50f;
+            ultimaTecla = teclas[2];
         }
         else if (Input.GetKey(teclas[3]))
         {
             anim.SetBool("AndarIzqu", true);
             anim.SetBool("Idle", false);
             rb.velocity = Vector2.left * vel * Time.deltaTime * 50f;
+            ultimaTecla = teclas[3];
         }
     }
 }

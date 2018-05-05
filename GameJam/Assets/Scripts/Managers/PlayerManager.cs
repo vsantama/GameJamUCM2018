@@ -6,9 +6,12 @@ public class PlayerManager : MonoBehaviour {
 
     public bool tieneCorazon = false;
 
-	// Use this for initialization
-	void Start () {
-		
+    public bool getHasCorazon() { return tieneCorazon; }
+    public void setCorezon(bool hasCorazon) { tieneCorazon = hasCorazon; }
+
+    // Use this for initialization
+    void Start () {
+        
 	}
 	
 	// Update is called once per frame

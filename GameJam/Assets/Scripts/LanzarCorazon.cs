@@ -2,59 +2,47 @@
 using System.Collections.Generic;
 using UnityEngine;
 
+[RequireComponent (typeof(PlayerManager))]
+[RequireComponent (typeof(PlayerController))]
+
 public class LanzarCorazon : MonoBehaviour
 {
+    PlayerManager Manager;
+    PlayerController Controller;
 
-    public GameObject player1;
-    public GameObject player2;
     public GameObject corazon;
-
-    public bool shiftIzq;
-    public bool shiftPressed = false;
+    public KeyCode tecla;
 
     // Use this for initialization
     void Start()
     {
-
+        Manager = GetComponent<PlayerManager>();
+        Controller = GetComponent<PlayerController>();
     }
 
     // Update is called once per frame
     void Update()
     {
-
-        if (Input.GetKeyDown(KeyCode.LeftShift))
+        if (Input.GetKeyDown(tecla) && Manager.tieneCorazon)
         {
-            shiftIzq = true;
-            shiftPressed = true;
+            Lanzar(Manager);
         }
-        else if (Input.GetKeyDown(KeyCode.RightShift))
+    }
+
+    void Lanzar(PlayerManager Manager)
+    {
+        corazon.transform.position = transform.position;
+        Instantiate(corazon);
+        Manager.tieneCorazon = false;
+
+        switch(Controller.ultimaTecla)
         {
-            shiftIzq = false;
-            shiftPressed = true;
-        }
-
-        if (shiftPressed)
-        {
-            if (shiftIzq && player1.GetComponent<PlayerManager>().tieneCorazon)
-            {
-                corazon.transform.position = player1.transform.position;
-                Debug.Log(player1.transform.position);
-                Debug.Log(corazon.transform.position);
-                Instantiate(corazon);
-
-                shiftPressed = false;
-                shiftIzq = false;
-            }
-            else if (!shiftIzq && player2.GetComponent<PlayerManager>().tieneCorazon)
-            {
-                corazon.transform.position = player2.transform.position;
-                Debug.Log(player2.transform.position);
-                Debug.Log(corazon.transform.position);
-                Instantiate(corazon);
-
-                shiftPressed = false;
-                shiftIzq = false;
-            }
+            case KeyCode.W:
+            case KeyCode.UpArrow:
+                break;
+            case KeyCode.S:
+            case KeyCode.DownArrow:
+                break;
         }
     }
 }
