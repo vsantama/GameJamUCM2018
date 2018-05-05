@@ -7,6 +7,7 @@ public class SepararPlayers : MonoBehaviour {
     public GameObject player1;
     public GameObject player2;
     public GameObject playerSolo;
+    GameObject mainCamera;
     public bool shiftIzq;
     public bool shiftPressed = false;
     Vector3 pos;
@@ -14,12 +15,13 @@ public class SepararPlayers : MonoBehaviour {
 
 	// Update is called once per frame
 	void Update () {
+        mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
         Separar();
 	}
 
     void Separar()
     {
-       
+       /*
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             shiftIzq = true;
@@ -30,7 +32,9 @@ public class SepararPlayers : MonoBehaviour {
         }
 
         if (shiftPressed)
-        {
+       */ 
+       if(Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+            {
 
             pos = new Vector3(playerSolo.transform.position.x - 0.8f, playerSolo.transform.position.y, playerSolo.transform.position.z);
             player1.transform.position = pos;
@@ -38,9 +42,11 @@ public class SepararPlayers : MonoBehaviour {
             pos = new Vector3(playerSolo.transform.position.x + 0.8f, playerSolo.transform.position.y, playerSolo.transform.position.z);
             player2.transform.position = pos;
 
-            Instantiate(player1);
-            Instantiate(player2);
-
+            GameObject aux = Instantiate(player1);
+            mainCamera.BroadcastMessage("addTargetToCamera",aux.transform,SendMessageOptions.DontRequireReceiver);
+            aux = Instantiate(player2);
+            mainCamera.BroadcastMessage("addTargetToCamera", aux.transform, SendMessageOptions.DontRequireReceiver);
+            mainCamera.BroadcastMessage("erasePlayerFromCamera", this.gameObject.transform, SendMessageOptions.DontRequireReceiver);
             Destroy(playerSolo);
         }
     }
