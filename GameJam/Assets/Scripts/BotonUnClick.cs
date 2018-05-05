@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BotonUnClick : MonoBehaviour {
+public class BotonUnClick : Boton {
 
 	// Use this for initialization
 	void Start () {
