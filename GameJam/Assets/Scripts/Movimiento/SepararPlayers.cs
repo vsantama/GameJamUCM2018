@@ -2,33 +2,36 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SepararPlayers : MonoBehaviour {
+public class SepararPlayers : MonoBehaviour
+{
 
     public GameObject player1;
     public GameObject player2;
     public GameObject playerSolo;
 
-    GameObject mainCamera;
     public bool shiftIzq;
     public bool shiftPressed = false;
+
+    GameObject mainCamera;
     Vector3 pos;
 
 
-	// Update is called once per frame
-	void Update () {
+    void Update()
+    {
         mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
         Separar();
-	}
+    }
 
     void Separar()
     {
-       
+
         if (Input.GetKeyDown(KeyCode.LeftShift))
         {
             shiftIzq = true;
             shiftPressed = true;
         }
-        else if(Input.GetKeyDown(KeyCode.RightShift)) {
+        else if (Input.GetKeyDown(KeyCode.RightShift))
+        {
             shiftIzq = false;
             shiftPressed = true;
         }
@@ -43,28 +46,29 @@ public class SepararPlayers : MonoBehaviour {
             pos = new Vector3(playerSolo.transform.position.x + 1f, playerSolo.transform.position.y, playerSolo.transform.position.z);
             player2.transform.position = pos;
 
-            Corazon(); //Mira quien se queda el corazon (aquel que no haya decidido separarse)
+            GameObject aux1 = Instantiate(player1);
+            GameObject aux2 = Instantiate(player2);
+            Corazon(shiftIzq, aux1, aux2); //Mira quien se queda el corazon (aquel que no haya decidido separarse)
 
-            GameObject aux = Instantiate(player1);
-            mainCamera.BroadcastMessage("addTargetToCamera",aux.transform,SendMessageOptions.DontRequireReceiver);
-            aux = Instantiate(player2);
-            mainCamera.BroadcastMessage("addTargetToCamera", aux.transform, SendMessageOptions.DontRequireReceiver);
+            mainCamera.BroadcastMessage("addTargetToCamera", aux1.transform, SendMessageOptions.DontRequireReceiver);
+            mainCamera.BroadcastMessage("addTargetToCamera", aux2.transform, SendMessageOptions.DontRequireReceiver);
             mainCamera.BroadcastMessage("erasePlayerFromCamera", this.gameObject.transform, SendMessageOptions.DontRequireReceiver);
+
             Destroy(playerSolo);
         }
     }
 
-    void Corazon()
+    void Corazon(bool shiftIzq, GameObject aux1, GameObject aux2)
     {
-        if (shiftIzq == true)
+        if (shiftIzq)
         {
-            player1.GetComponent<PlayerManager>().tieneCorazon = false;
-            player2.GetComponent<PlayerManager>().tieneCorazon = true;
+            aux1.GetComponent<PlayerManager>().tieneCorazon = false;
+            aux2.GetComponent<PlayerManager>().tieneCorazon = true;
         }
         else
         {
-            player1.GetComponent<PlayerManager>().tieneCorazon = true;
-            player2.GetComponent<PlayerManager>().tieneCorazon = false;
+            aux1.GetComponent<PlayerManager>().tieneCorazon = true;
+            aux2.GetComponent<PlayerManager>().tieneCorazon = false;
         }
     }
 }

@@ -2,7 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class JuntarPlayers : MonoBehaviour {
+public class JuntarPlayers : MonoBehaviour
+{
 
     public GameObject playerSolo;
     GameObject mainCamera;
@@ -10,19 +11,24 @@ public class JuntarPlayers : MonoBehaviour {
     public Vector3 normalizado;
 
     // Use this for initialization
-    void Start () {
-		mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
+    void Start()
+    {
+        mainCamera = GameObject.FindGameObjectWithTag("MainCamera");
     }
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+
+    // Update is called once per frame
+    void Update()
+    {
+
+    }
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "Player")
         {
+            this.gameObject.GetComponent<PlayerManager>().tieneCorazon = false;
+            collision.gameObject.GetComponent<PlayerManager>().tieneCorazon = false;
+
             direccion = transform.position - collision.gameObject.transform.position;
             normalizado = direccion.normalized; //DIRECION EN LA QUE CHOCAN
 
