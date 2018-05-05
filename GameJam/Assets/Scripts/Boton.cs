@@ -7,24 +7,24 @@ public class Boton : MonoBehaviour {
     public GameObject[] targetAccion = new GameObject[1];
 
 	// Use this for initialization
-	void Start () {
+	virtual protected void Start () {
 		
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	virtual protected void Update () {
 		
 	}
 
     virtual public void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
-            act();
+            doStuff("Activate");
 
         Debug.Log("JAJAJAJAJAJA");
     }
-    virtual public void act() {
+    virtual public void doStuff(string stuff) {
         for(int i = 0; i< targetAccion.Length; i++)
-            targetAccion[i].BroadcastMessage("Activate", SendMessageOptions.RequireReceiver);
+            targetAccion[i].BroadcastMessage(stuff, SendMessageOptions.RequireReceiver);
     }
 }

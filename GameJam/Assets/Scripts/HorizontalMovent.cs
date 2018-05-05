@@ -2,10 +2,9 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HorizontalMovent : MonoBehaviour {
+public class HorizontalMovent : ObjetosActivables {
 
     public float vel = 10;
-    bool activated = false;
     Vector3 pos;
 
 	// Use this for initialization
@@ -21,9 +20,4 @@ public class HorizontalMovent : MonoBehaviour {
             transform.position = Vector3.MoveTowards(transform.position, pos, Time.deltaTime * vel);
         }
 	}
-
-    void Activate()
-    {
-        activated = true;
-    }
 }
