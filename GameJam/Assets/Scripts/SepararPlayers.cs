@@ -39,7 +39,7 @@ public class SepararPlayers : MonoBehaviour {
             pos = new Vector3(playerSolo.transform.position.x - 0.8f, playerSolo.transform.position.y, playerSolo.transform.position.z);
             player1.transform.position = pos;
 
-            pos = new Vector3(playerSolo.transform.position.x + 0.8f, playerSolo.transform.position.y, playerSolo.transform.position.z);
+            pos = new Vector3(playerSolo.transform.position.x + 1f, playerSolo.transform.position.y, playerSolo.transform.position.z);
             player2.transform.position = pos;
 
             GameObject aux = Instantiate(player1);
