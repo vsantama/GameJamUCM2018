@@ -50,7 +50,7 @@ public class BuildLevelFromFile : MonoBehaviour
                     Object prefab = prefabs[c];
                     if (prefab != null)
                     {
-                        GameObject o = createObject(prefab, root, new Vector3((float)x / 2 - 0.5f,-((float)y / 2 - 0.5f), 0));
+                        GameObject o = createObject(prefab, root, new Vector3((float)x / 2 - 0.5f, -((float)y / 2 - 0.5f), 0));
                     }
                 }
 
@@ -93,10 +93,20 @@ public class BuildLevelFromFile : MonoBehaviour
     }
 
     static PrefabInfo[] all = new PrefabInfo[] {
-        new PrefabInfo('L', "Assets/Prefabs/Test/Dark.prefab"),
-        new PrefabInfo('1', "Assets/Prefabs/Player1.prefab"),
-        new PrefabInfo('2', "Assets/Prefabs/Player2.prefab"),
-        new PrefabInfo('D', "Assets/Prefabs/Test/ObjLight.prefab"),
+        new PrefabInfo('1', "Assets/Prefabs/2DPlayer1.prefab"),
+        new PrefabInfo('2', "Assets/Prefabs/2DPlayer2.prefab"),
+        new PrefabInfo('3', "Assets/Prefabs/2DPlayerSolo.prefab"),
+        new PrefabInfo('M', "Assets/Prefabs/Muro.prefab"),
+        new PrefabInfo('l', "Assets/Prefabs/Muro.prefab"), // para el de luz
+        new PrefabInfo('d', "Assets/Prefabs/Muro.prefab"), // para el de oscuridad
+        new PrefabInfo('B', "Assets/Prefabs/Botones/BotonUnClick.prefab"),
+        new PrefabInfo('L', "Assets/Prefabs/Botones/BotonUnClickLuz.prefab"), // el de luz
+        new PrefabInfo('D', "Assets/Prefabs/Botones/BotonUnClickOscuro.prefab"), // el de oscuro
+        new PrefabInfo('b', "Assets/Prefabs/Botones/BotonMantener.prefab"),
+        new PrefabInfo('u', "Assets/Prefabs/Botones/BotonMantenerLuz.prefab"), // el de luz
+        new PrefabInfo('s', "Assets/Prefabs/Botones/BotonMantenerOscuro.prefab"), // el de oscuridad
+        new PrefabInfo('D', "Assets/Prefabs/Botones/BotonDoble.prefab"), // doble un click
+        new PrefabInfo('d', "Assets/Prefabs/Botones/BotonDobleMantenido.prefab"), // doble mantenido
     };
     static Dictionary<char, Object> prefabs;
     private static void initPrefabsBD()
