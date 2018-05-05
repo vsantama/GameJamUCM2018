@@ -6,8 +6,8 @@ M                       M
 M                       M
 MMMMMlllMMMMMMMMMoooMMMMM
 M       MMMMMMMMM       M
-M         MMMMM         M
-M         MMMMM         M
+M       MMMMMMMMM       M
+M       MMMMMMMMM       M
 M          MMM          M
 M           M           M
 M           M           M
