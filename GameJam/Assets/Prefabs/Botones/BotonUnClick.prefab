@@ -22,7 +22,6 @@ GameObject:
   - component: {fileID: 212996757216079740}
   - component: {fileID: 61913669533594018}
   - component: {fileID: 114135075819816634}
-  - component: {fileID: 114163411230654464}
   m_Layer: 0
   m_Name: BotonUnClick
   m_TagString: Untagged
@@ -81,21 +80,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetAccion:
   - {fileID: 0}
---- !u!114 &114163411230654464
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1941471611580160}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: c7ef62b3a62069b449ac7ce67e5cd04b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  comentarios:
-  - 
-  - 
-  - 
 --- !u!212 &212996757216079740
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -131,7 +115,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 63d5b2c3ef76653448a4751d4b42b50e, type: 3}
-  m_Color: {r: 0.62068963, g: 0.5, b: 1, a: 1}
+  m_Color: {r: 0.24137926, g: 0, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
