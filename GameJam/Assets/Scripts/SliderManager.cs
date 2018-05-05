@@ -3,7 +3,7 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class SliderManager : MonoBehaviour
 {
-    static SliderManager instance;
+    public static SliderManager instance;
 
     public int CurrentLevel;
     public float tiempo = 30f; //TIEMPO EN SEGUNDOS PARA MORIR
@@ -22,12 +22,7 @@ public class SliderManager : MonoBehaviour
     // Use this for initialization
     void Awake()
     {
-        //Hacerlo con mensajes
-        jugadorBlanco = GameObject.Find("2DPlayer1");
-        managerBlanco = jugadorBlanco.GetComponent<PlayerManager>();
-        jugadorNegro = GameObject.Find("2DPlayer2");
-        managerNegro = jugadorNegro.GetComponent<PlayerManager>();
-        sliderNegro.value = 1;
+        ResetearTiempo();
     }
 
     // Update is called once per frame
@@ -65,5 +60,14 @@ public class SliderManager : MonoBehaviour
         string nextScene = "Nivel" + (CurrentLevel + 1).ToString();
         CurrentLevel++;
         SceneManager.LoadScene(nextScene);
+    }
+
+    public void ResetearTiempo()
+    {
+        SliderManager.instance.jugadorBlanco = GameObject.Find("2DPlayer1");
+        SliderManager.instance.managerBlanco = jugadorBlanco.GetComponent<PlayerManager>();
+        SliderManager.instance.jugadorNegro = GameObject.Find("2DPlayer2");
+        SliderManager.instance.managerNegro = jugadorNegro.GetComponent<PlayerManager>();
+        SliderManager.instance.sliderNegro.value = 1;
     }
 }
