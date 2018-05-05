@@ -9,90 +9,64 @@ Prefab:
     m_Modifications: []
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
-  m_RootGameObject: {fileID: 1038833342059562}
+  m_RootGameObject: {fileID: 1656315509499384}
   m_IsPrefabParent: 1
---- !u!1 &1038833342059562
+--- !u!1 &1656315509499384
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   serializedVersion: 5
   m_Component:
-  - component: {fileID: 4014040176862138}
-  - component: {fileID: 212439972498283938}
-  - component: {fileID: 61535781406645216}
-  - component: {fileID: 50855889676309126}
+  - component: {fileID: 4166304468142658}
+  - component: {fileID: 212692529182897616}
+  - component: {fileID: 114291318597003860}
   m_Layer: 0
-  m_Name: Muro
-  m_TagString: Muro
+  m_Name: Corazon
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &4014040176862138
+--- !u!4 &4166304468142658
 Transform:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1038833342059562}
+  m_GameObject: {fileID: 1656315509499384}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.49, y: 0.5, z: -0.11328125}
+  m_LocalPosition: {x: 0.01, y: 3.95, z: 0.0078125}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!50 &50855889676309126
-Rigidbody2D:
-  serializedVersion: 4
+--- !u!114 &114291318597003860
+MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1038833342059562}
-  m_BodyType: 2
-  m_Simulated: 1
-  m_UseFullKinematicContacts: 0
-  m_UseAutoMass: 0
-  m_Mass: 1
-  m_LinearDrag: 0
-  m_AngularDrag: 0
-  m_GravityScale: 0
-  m_Material: {fileID: 0}
-  m_Interpolate: 0
-  m_SleepingMode: 1
-  m_CollisionDetection: 1
-  m_Constraints: 0
---- !u!61 &61535781406645216
-BoxCollider2D:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1038833342059562}
+  m_GameObject: {fileID: 1656315509499384}
   m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: 0, y: 0}
-  m_SpriteTilingProperty:
-    border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
-    newSize: {x: 1, y: 1}
-    adaptiveTilingThreshold: 0.5
-    drawMode: 0
-    adaptiveTiling: 0
-  m_AutoTiling: 0
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1}
-  m_EdgeRadius: 0
---- !u!212 &212439972498283938
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 12d4041c2a16450409349a4eb0fba718, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  corazonManager: {fileID: 1656315509499384}
+  corazon: {fileID: 21300000, guid: b69a98962bde46b48b4370791bddb0a6, type: 3}
+  separarScript: {fileID: 114690221030772206, guid: 3b817a3d4470d944cb2c0fbe1c3d22cc,
+    type: 2}
+  manager1: {fileID: 114212316481668060, guid: 159fd0cd4ff195443a04e176a26cfa81, type: 2}
+  manager2: {fileID: 114277496631674228, guid: 91d2faa81274cf143bcad18e972a64c5, type: 2}
+  player:
+  - {fileID: 1380493712335792, guid: 159fd0cd4ff195443a04e176a26cfa81, type: 2}
+  - {fileID: 1949042840033418, guid: 91d2faa81274cf143bcad18e972a64c5, type: 2}
+--- !u!212 &212692529182897616
 SpriteRenderer:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1038833342059562}
+  m_GameObject: {fileID: 1656315509499384}
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -121,12 +95,12 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 63d5b2c3ef76653448a4751d4b42b50e, type: 3}
-  m_Color: {r: 0.875, g: 0.109375, b: 0.109375, a: 1}
+  m_Sprite: {fileID: 21300000, guid: b69a98962bde46b48b4370791bddb0a6, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 1.9, y: 1.99}
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1

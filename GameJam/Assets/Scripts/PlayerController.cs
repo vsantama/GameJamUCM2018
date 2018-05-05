@@ -15,7 +15,7 @@ public class PlayerController : MonoBehaviour {
     // Update is called once per frame
     void FixedUpdate () {
         Move(velocity);
-	}
+    }
 
     void Move(float vel)
     {
@@ -47,5 +47,14 @@ public class PlayerController : MonoBehaviour {
             rb.velocity = Vector2.left * vel * Time.deltaTime * 50f;
         }
         //transform.position = Vector3.MoveTowards(transform.position, pos, Time.deltaTime * vel);
+    }
+
+    void OnTriggerEnter(Collider2D collision)
+    {
+        if(collision.gameObject.tag == "Muro")
+        {
+            Debug.Log("MURO");
+            velocity = 0f;
+        }
     }
 }

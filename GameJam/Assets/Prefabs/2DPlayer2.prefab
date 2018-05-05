@@ -20,6 +20,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4256535791065500}
   - component: {fileID: 212725227213119506}
+  - component: {fileID: 114277496631674228}
   - component: {fileID: 114980133394901590}
   - component: {fileID: 61549443546064706}
   - component: {fileID: 50046983142447366}
@@ -37,7 +38,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1949042840033418}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 6.040673, y: -0.41471207, z: 0}
+  m_LocalPosition: {x: 4.0011015, y: 2.9080007, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -88,6 +89,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114277496631674228
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1949042840033418}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 006c69f740597a64b85c0fd381da60a3, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tieneCorazon: 1
 --- !u!114 &114980133394901590
 MonoBehaviour:
   m_ObjectHideFlags: 1
