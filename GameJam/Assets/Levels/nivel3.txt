@@ -1,6 +1,6 @@
    MMMMMMMMMMMMMMMMMMMMMMMMM
    M         MMM           M
-MMMM  MMMMM  MMM  O  O  O  MMMM
+MMMM  MMMMM  MMM  L  L  L  MMMM
 MC    M        M             CM
 MMMMMMMM MMMMMMM    MMM    MMMM
    M           MMMMM   MMMMM
@@ -12,12 +12,12 @@ MMMMMMMM MMMMMMM    MMM    MMMM
    MMMMMMM  MMMMMMMMppMMMMMM
    M    M    M             M
    M    p    h             M
-   M    p    h            lM
+   M    p    h            LM
    M    M   dMMMMMMMooMMMMMM
    MMppMMMMMMM             M
-   M    M    M       O     M
-   M    p    p      O O    M
-   M    p    p       O     M
+   M    M    M       L     M
+   M    p    p      L L    M
+   M    p    p       L     M
    M    M    M             M
    MMMMMMMMMMM   MMMMMMMMMMM
              M   M

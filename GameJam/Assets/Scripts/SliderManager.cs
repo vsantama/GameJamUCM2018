@@ -3,6 +3,8 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class SliderManager : MonoBehaviour
 {
+    static SliderManager instance;
+
     public int CurrentLevel;
     public float tiempo = 30f; //TIEMPO EN SEGUNDOS PARA MORIR
     public float tiempoRecarga = 10f;
@@ -12,17 +14,20 @@ public class SliderManager : MonoBehaviour
     public GameObject jugadorNegro;
     public PlayerManager managerBlanco;
     public PlayerManager managerNegro;
-    // Use this for initialization
-    void Start()
-    {
 
+    private void Start()
+    {
+        instance = this;
+    }
+    // Use this for initialization
+    void Awake()
+    {
         //Hacerlo con mensajes
         jugadorBlanco = GameObject.Find("2DPlayer1");
         managerBlanco = jugadorBlanco.GetComponent<PlayerManager>();
         jugadorNegro = GameObject.Find("2DPlayer2");
         managerNegro = jugadorNegro.GetComponent<PlayerManager>();
         sliderNegro.value = 1;
-        
     }
 
     // Update is called once per frame
