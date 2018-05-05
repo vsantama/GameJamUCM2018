@@ -34,14 +34,24 @@ public class LanzarCorazon : MonoBehaviour
         corazon.transform.position = transform.position;
         Instantiate(corazon);
         Manager.tieneCorazon = false;
-
+        
         switch(Controller.ultimaTecla)
         {
             case KeyCode.W:
             case KeyCode.UpArrow:
+                corazon.transform.Translate(Vector3.up * Time.deltaTime);
                 break;
             case KeyCode.S:
             case KeyCode.DownArrow:
+                corazon.transform.position += Vector3.down * Time.deltaTime;
+                break;
+            case KeyCode.D:
+            case KeyCode.RightArrow:
+                corazon.transform.position += Vector3.right * Time.deltaTime;
+                break;
+            case KeyCode.A:
+            case KeyCode.LeftArrow:
+                corazon.transform.position += Vector3.left * Time.deltaTime;
                 break;
         }
     }
