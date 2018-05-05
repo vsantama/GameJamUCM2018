@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -7,14 +7,11 @@ public class SepararPlayers : MonoBehaviour {
     public GameObject player1;
     public GameObject player2;
     public GameObject playerSolo;
-
+    public bool shiftIzq;
+    public bool shiftPressed = false;
     Vector3 pos;
 
-    // Use this for initialization
-    void Start () {
-		
-	}
-	
+
 	// Update is called once per frame
 	void Update () {
         Separar();
@@ -22,8 +19,19 @@ public class SepararPlayers : MonoBehaviour {
 
     void Separar()
     {
-        if (Input.GetKeyDown(KeyCode.LeftShift) || Input.GetKeyDown(KeyCode.RightShift))
+       
+        if (Input.GetKeyDown(KeyCode.LeftShift))
         {
+            shiftIzq = true;
+            shiftPressed = true;
+        }
+        else if(Input.GetKeyDown(KeyCode.RightShift)) {
+            shiftPressed = true;
+        }
+
+        if (shiftPressed)
+        {
+
             pos = new Vector3(playerSolo.transform.position.x - 0.8f, playerSolo.transform.position.y, playerSolo.transform.position.z);
             player1.transform.position = pos;
 
