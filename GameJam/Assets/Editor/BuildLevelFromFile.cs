@@ -50,7 +50,7 @@ public class BuildLevelFromFile : MonoBehaviour
                     Object prefab = prefabs[c];
                     if (prefab != null)
                     {
-                        GameObject o = createObject(prefab, root, new Vector3((float)x / 2 - 0.5f, -((float)y / 2 - 0.5f), 0));
+                        GameObject o = createObject(prefab, root, new Vector3((float)x - 0.5f, -((float)y - 0.5f), 0));
                     }
                 }
 
