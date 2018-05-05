@@ -119,6 +119,7 @@ GameObject:
   - component: {fileID: 223006417034087428}
   - component: {fileID: 114162928256130310}
   - component: {fileID: 114684318137562050}
+  - component: {fileID: 114105346459843812}
   m_Layer: 5
   m_Name: CanvasSliders
   m_TagString: Untagged
@@ -186,6 +187,25 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 0
   m_FillOrigin: 0
+--- !u!114 &114105346459843812
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1756084305483556}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 79d877f68f54ee84aa5b4c4d7950e2ed, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  tiempo: 30
+  tiempoRecarga: 10
+  sliderBlanco: {fileID: 0}
+  sliderNegro: {fileID: 0}
+  jugadorBlanco: {fileID: 0}
+  jugadorNegro: {fileID: 0}
+  managerBlanco: {fileID: 0}
+  managerNegro: {fileID: 0}
 --- !u!114 &114162928256130310
 MonoBehaviour:
   m_ObjectHideFlags: 1

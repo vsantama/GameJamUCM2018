@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEditor;
@@ -93,20 +93,24 @@ public class BuildLevelFromFile : MonoBehaviour
     }
 
     static PrefabInfo[] all = new PrefabInfo[] {
+        new PrefabInfo('M', "Assets/Prefabs/Muro.prefab"),
+        new PrefabInfo('l', "Assets/Prefabs/MuroLuz.prefab"), // para el de luz
+        new PrefabInfo('o', "Assets/Prefabs/MuroOscuro.prefab"), // para el de oscuridad
         new PrefabInfo('1', "Assets/Prefabs/2DPlayer1.prefab"),
         new PrefabInfo('2', "Assets/Prefabs/2DPlayer2.prefab"),
         new PrefabInfo('3', "Assets/Prefabs/2DPlayerSolo.prefab"),
-        new PrefabInfo('M', "Assets/Prefabs/Muro.prefab"),
-        new PrefabInfo('l', "Assets/Prefabs/Muro.prefab"), // para el de luz
-        new PrefabInfo('d', "Assets/Prefabs/Muro.prefab"), // para el de oscuridad
         new PrefabInfo('B', "Assets/Prefabs/Botones/BotonUnClick.prefab"),
         new PrefabInfo('L', "Assets/Prefabs/Botones/BotonUnClickLuz.prefab"), // el de luz
-        new PrefabInfo('D', "Assets/Prefabs/Botones/BotonUnClickOscuro.prefab"), // el de oscuro
+        new PrefabInfo('O', "Assets/Prefabs/Botones/BotonUnClickOscuro.prefab"), // el de oscuro
         new PrefabInfo('b', "Assets/Prefabs/Botones/BotonMantener.prefab"),
         new PrefabInfo('u', "Assets/Prefabs/Botones/BotonMantenerLuz.prefab"), // el de luz
         new PrefabInfo('s', "Assets/Prefabs/Botones/BotonMantenerOscuro.prefab"), // el de oscuridad
         new PrefabInfo('D', "Assets/Prefabs/Botones/BotonDoble.prefab"), // doble un click
         new PrefabInfo('d', "Assets/Prefabs/Botones/BotonDobleMantenido.prefab"), // doble mantenido
+        new PrefabInfo('c',"Assets/Prefabs/Checkpoint.prefab" ),
+        new PrefabInfo('p', "Assets/Prefabs/Puerta.prefab"),
+        new PrefabInfo('h', "Assets/Prefabs/MuroCorazon")
+
     };
     static Dictionary<char, Object> prefabs;
     private static void initPrefabsBD()
