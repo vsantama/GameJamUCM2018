@@ -1,8 +1,8 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Puerta : MonoBehaviour {
+public class Puerta : ObjetosActivables {
 
 	// Use this for initialization
 	void Start () {
@@ -11,6 +11,15 @@ public class Puerta : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
+        if(activated)
+        {
+            gameObject.SetActive(false);
+        }
+        else if(!activated)
+        {
+            gameObject.SetActive(true);
+        }
 		
 	}
 }

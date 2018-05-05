@@ -4,13 +4,14 @@ using UnityEngine;
 
 public class Checkpoint : ObjetosActivables {
 
+    public Vector3 posicionCheckpoint;
 	// Use this for initialization
 	void Start () {
-		
+        posicionCheckpoint = gameObject.transform.position;
 	}
 	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+    private void OnTriggerEnter2D(Collider2D collision)
+    {
+      
+    }
 }

@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212204745424273872}
   - component: {fileID: 61955725637134890}
   - component: {fileID: 50595530874118752}
+  - component: {fileID: 114683080967025378}
   m_Layer: 0
   m_Name: Puerta
   m_TagString: Muro
@@ -87,6 +88,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &114683080967025378
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1864083993499934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 33b017f47627d7a4798855024a58d2ef, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!212 &212204745424273872
 SpriteRenderer:
   m_ObjectHideFlags: 1
