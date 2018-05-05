@@ -51,8 +51,6 @@ public class BuildLevelFromFile : MonoBehaviour
                     if (prefab != null)
                     {
                         GameObject o = createObject(prefab, root, new Vector3((float)x / 2 - 0.5f,-((float)y / 2 - 0.5f), 0));
-                        if ((x % 2 == 0) && (y % 2 == 1))
-                            o.transform.Rotate(new Vector3(0, 90, 0));
                     }
                 }
 
