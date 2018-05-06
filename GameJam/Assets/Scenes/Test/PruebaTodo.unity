@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -234,9 +234,30 @@ Prefab:
       propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 114105346459843812, guid: 6ecca305944fb004aa9caf6e43db27ee,
+        type: 2}
+      propertyPath: sliderBlanco
+      value: 
+      objectReference: {fileID: 1169368642}
+    - target: {fileID: 114105346459843812, guid: 6ecca305944fb004aa9caf6e43db27ee,
+        type: 2}
+      propertyPath: sliderNegro
+      value: 
+      objectReference: {fileID: 590773095}
+    - target: {fileID: 114535358103457028, guid: 6ecca305944fb004aa9caf6e43db27ee,
+        type: 2}
+      propertyPath: m_Value
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ecca305944fb004aa9caf6e43db27ee, type: 2}
   m_IsPrefabParent: 0
+--- !u!114 &590773095 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114535358103457028, guid: 6ecca305944fb004aa9caf6e43db27ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 549484404}
+  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &740820053
 GameObject:
   m_ObjectHideFlags: 0
@@ -479,12 +500,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targets:
-  - {fileID: 0}
-  - {fileID: 0}
+  - {fileID: 1572194818}
   offset: {x: 0, y: 0, z: -10}
   distance: 0
   camSize: 5
   maxZoom: 10
+--- !u!114 &1169368642 stripped
+MonoBehaviour:
+  m_PrefabParentObject: {fileID: 114991263392657650, guid: 6ecca305944fb004aa9caf6e43db27ee,
+    type: 2}
+  m_PrefabInternal: {fileID: 549484404}
+  m_Script: {fileID: -113659843, guid: f70555f144d8491a825f0804e09c671c, type: 3}
 --- !u!1 &1406719364
 GameObject:
   m_ObjectHideFlags: 0
@@ -547,6 +573,11 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1572194818 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4067954461100328, guid: 3b817a3d4470d944cb2c0fbe1c3d22cc,
+    type: 2}
+  m_PrefabInternal: {fileID: 794811436}
 --- !u!1001 &1784593772
 Prefab:
   m_ObjectHideFlags: 0

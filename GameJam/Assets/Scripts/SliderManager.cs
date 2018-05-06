@@ -18,11 +18,11 @@ public class SliderManager : MonoBehaviour
     private void Start()
     {
         instance = this;
+        ResetearTiempo();
     }
     // Use this for initialization
     void Awake()
     {
-        ResetearTiempo();
     }
 
     // Update is called once per frame
@@ -64,9 +64,10 @@ public class SliderManager : MonoBehaviour
 
     public void ResetearTiempo()
     {
-        SliderManager.instance.jugadorBlanco = GameObject.Find("2DPlayer1");
+       
+        SliderManager.instance.jugadorBlanco = GameObject.Find("2DPlayer1(Clone)");
         SliderManager.instance.managerBlanco = jugadorBlanco.GetComponent<PlayerManager>();
-        SliderManager.instance.jugadorNegro = GameObject.Find("2DPlayer2");
+        SliderManager.instance.jugadorNegro = GameObject.Find("2DPlayer2(Clone)");
         SliderManager.instance.managerNegro = jugadorNegro.GetComponent<PlayerManager>();
         SliderManager.instance.sliderNegro.value = 1;
     }

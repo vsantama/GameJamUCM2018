@@ -4,8 +4,7 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour {
 
-    public GameObject jugadorBlanco;
-    public GameObject jugadorNegro;
+
     public bool tieneCorazon = false;
 
     public bool getHasCorazon() { return tieneCorazon; }
@@ -13,8 +12,6 @@ public class PlayerManager : MonoBehaviour {
 
     // Use this for initialization
     void Start () {
-
-        SliderManager.instance.ResetearTiempo();
 
     }
 	
