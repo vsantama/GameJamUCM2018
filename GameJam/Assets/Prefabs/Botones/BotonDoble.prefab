@@ -80,6 +80,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetAccion:
   - {fileID: 0}
+  stuff: Activate
   botonGemelo: {fileID: 0}
 --- !u!212 &212533207726528712
 SpriteRenderer:
@@ -115,8 +116,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 63d5b2c3ef76653448a4751d4b42b50e, type: 3}
-  m_Color: {r: 0, g: 0.5808823, b: 0.07611555, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 1fbb45034354cba4296596224a160763, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0

@@ -23,11 +23,12 @@ public class BotonDoblePulsado : Boton
             botonGemelo.BroadcastMessage("activarGemelo", SendMessageOptions.RequireReceiver);
             if (otroBoton)
             {
-                doStuff("Activate");
+                doStuff(stuff);
             }
         }
 
         Debug.Log(this.name);
+        Debug.Log(stuff);
         Debug.Log(otroBoton);
         Debug.Log("JAJAJAJAJAJA");
     }

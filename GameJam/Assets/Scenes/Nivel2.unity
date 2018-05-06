@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -442,8 +442,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 21300000, guid: 63d5b2c3ef76653448a4751d4b42b50e, type: 3}
-  m_Color: {r: 0.24137926, g: 0, b: 1, a: 1}
+  m_Sprite: {fileID: 21300000, guid: 291a27b606eaf7b4a81d4ccb826e8e88, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -584,6 +584,31 @@ Prefab:
     - target: {fileID: 4902737500885504, guid: e6f02d3daf8fad3418f45d7590ce40bd, type: 2}
       propertyPath: m_RootOrder
       value: 53
+      objectReference: {fileID: 0}
+    - target: {fileID: 61737174449423972, guid: e6f02d3daf8fad3418f45d7590ce40bd,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 0.9
+      objectReference: {fileID: 0}
+    - target: {fileID: 61737174449423972, guid: e6f02d3daf8fad3418f45d7590ce40bd,
+        type: 2}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 0.97
+      objectReference: {fileID: 0}
+    - target: {fileID: 212104056706198424, guid: e6f02d3daf8fad3418f45d7590ce40bd,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212104056706198424, guid: e6f02d3daf8fad3418f45d7590ce40bd,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212104056706198424, guid: e6f02d3daf8fad3418f45d7590ce40bd,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6f02d3daf8fad3418f45d7590ce40bd, type: 2}
@@ -2870,13 +2895,17 @@ Prefab:
         type: 2}
       propertyPath: targetAccion.Array.data[0]
       value: 
-      objectReference: {fileID: 1949042840033418, guid: 91d2faa81274cf143bcad18e972a64c5,
-        type: 2}
+      objectReference: {fileID: 1734807172}
     - target: {fileID: 114037329510171362, guid: 79d237d2776c3ca459350b7c16174f77,
         type: 2}
       propertyPath: targetAccion.Array.data[1]
       value: 
       objectReference: {fileID: 451053259}
+    - target: {fileID: 114037329510171362, guid: 79d237d2776c3ca459350b7c16174f77,
+        type: 2}
+      propertyPath: stuff
+      value: NextLevel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79d237d2776c3ca459350b7c16174f77, type: 2}
   m_IsPrefabParent: 0
@@ -3864,7 +3893,8 @@ MonoBehaviour:
   targets:
   - {fileID: 1278058097}
   offset: {x: 0, y: 0, z: -10}
-  distance: 0
+  distancex: 0
+  distancey: 0
   camSize: 5
   maxZoom: 10
 --- !u!81 &743399884
@@ -9620,6 +9650,21 @@ Prefab:
     - target: {fileID: 4902737500885504, guid: e6f02d3daf8fad3418f45d7590ce40bd, type: 2}
       propertyPath: m_RootOrder
       value: 54
+      objectReference: {fileID: 0}
+    - target: {fileID: 212104056706198424, guid: e6f02d3daf8fad3418f45d7590ce40bd,
+        type: 2}
+      propertyPath: m_Color.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212104056706198424, guid: e6f02d3daf8fad3418f45d7590ce40bd,
+        type: 2}
+      propertyPath: m_Color.g
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 212104056706198424, guid: e6f02d3daf8fad3418f45d7590ce40bd,
+        type: 2}
+      propertyPath: m_Color.b
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6f02d3daf8fad3418f45d7590ce40bd, type: 2}

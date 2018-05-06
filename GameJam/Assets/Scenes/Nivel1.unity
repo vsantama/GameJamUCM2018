@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -1210,7 +1210,7 @@ Prefab:
     - target: {fileID: 224185698786253528, guid: e0be40a8ebe6359428f2ec5ae9e21da3,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224185698786253528, guid: e0be40a8ebe6359428f2ec5ae9e21da3,
         type: 2}
@@ -2670,6 +2670,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4014040176862138, guid: ae775ab6fb4e82949a589fa4d6348603,
     type: 2}
   m_PrefabInternal: {fileID: 542825311}
+--- !u!1 &544399256 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1780147669744262, guid: 79d237d2776c3ca459350b7c16174f77,
+    type: 2}
+  m_PrefabInternal: {fileID: 2010281219}
 --- !u!1001 &546182261
 Prefab:
   m_ObjectHideFlags: 0
@@ -3698,7 +3703,7 @@ Camera:
   m_GameObject: {fileID: 814633021}
   m_Enabled: 1
   serializedVersion: 2
-  m_ClearFlags: 1
+  m_ClearFlags: 2
   m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}
   m_NormalizedViewPortRect:
     serializedVersion: 2
@@ -3753,7 +3758,8 @@ MonoBehaviour:
   targets:
   - {fileID: 1058349056}
   offset: {x: 0, y: 0, z: -10}
-  distance: 0
+  distancex: 0
+  distancey: 0
   camSize: 5
   maxZoom: 10
 --- !u!1001 &815481325
@@ -5824,6 +5830,28 @@ Transform:
   m_PrefabParentObject: {fileID: 4014040176862138, guid: ae775ab6fb4e82949a589fa4d6348603,
     type: 2}
   m_PrefabInternal: {fileID: 1226302735}
+--- !u!1 &1229256433 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1813210242846098, guid: bc26f3cdf1b5e694c9502416a1a7f6e5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1494090648}
+--- !u!95 &1229256438
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1229256433}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: cabc204af1bc0f34d84b47eaf42adadd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!1001 &1231515236
 Prefab:
   m_ObjectHideFlags: 0
@@ -6756,6 +6784,11 @@ Prefab:
       propertyPath: m_RootOrder
       value: 53
       objectReference: {fileID: 0}
+    - target: {fileID: 95143304810445670, guid: e6f02d3daf8fad3418f45d7590ce40bd,
+        type: 2}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 4fd505f2d2b097f46a4897a2090fe9f4, type: 2}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: e6f02d3daf8fad3418f45d7590ce40bd, type: 2}
   m_IsPrefabParent: 0
@@ -7719,7 +7752,7 @@ Transform:
   - {fileID: 540228850}
   - {fileID: 1535775701}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1561745293
 Prefab:
@@ -9498,6 +9531,21 @@ Prefab:
     - target: {fileID: 4500198858181536, guid: 79d237d2776c3ca459350b7c16174f77, type: 2}
       propertyPath: m_RootOrder
       value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 114037329510171362, guid: 79d237d2776c3ca459350b7c16174f77,
+        type: 2}
+      propertyPath: botonGemelo
+      value: 
+      objectReference: {fileID: 544399256}
+    - target: {fileID: 114037329510171362, guid: 79d237d2776c3ca459350b7c16174f77,
+        type: 2}
+      propertyPath: targetAccion.Array.data[0]
+      value: 
+      objectReference: {fileID: 544399256}
+    - target: {fileID: 114037329510171362, guid: 79d237d2776c3ca459350b7c16174f77,
+        type: 2}
+      propertyPath: stuff
+      value: NextLevel
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79d237d2776c3ca459350b7c16174f77, type: 2}

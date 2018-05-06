@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
 --- !u!157 &3
 LightmapSettings:
   m_ObjectHideFlags: 0
@@ -2306,7 +2306,8 @@ MonoBehaviour:
   targets:
   - {fileID: 1674717960}
   offset: {x: 0, y: 0, z: -10}
-  distance: 0
+  distancex: 0
+  distancey: 0
   camSize: 5
   maxZoom: 10
 --- !u!81 &422718083
@@ -6890,7 +6891,7 @@ Prefab:
     - target: {fileID: 224185698786253528, guid: e0be40a8ebe6359428f2ec5ae9e21da3,
         type: 2}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 224185698786253528, guid: e0be40a8ebe6359428f2ec5ae9e21da3,
         type: 2}
@@ -7637,9 +7638,29 @@ Prefab:
       propertyPath: m_RootOrder
       value: 53
       objectReference: {fileID: 0}
+    - target: {fileID: 114037329510171362, guid: 79d237d2776c3ca459350b7c16174f77,
+        type: 2}
+      propertyPath: botonGemelo
+      value: 
+      objectReference: {fileID: 2129532156}
+    - target: {fileID: 114037329510171362, guid: 79d237d2776c3ca459350b7c16174f77,
+        type: 2}
+      propertyPath: targetAccion.Array.data[0]
+      value: 
+      objectReference: {fileID: 2129532156}
+    - target: {fileID: 114037329510171362, guid: 79d237d2776c3ca459350b7c16174f77,
+        type: 2}
+      propertyPath: stuff
+      value: NextLevel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79d237d2776c3ca459350b7c16174f77, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1226063224 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1780147669744262, guid: 79d237d2776c3ca459350b7c16174f77,
+    type: 2}
+  m_PrefabInternal: {fileID: 1226063223}
 --- !u!4 &1235049135 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4014040176862138, guid: ae775ab6fb4e82949a589fa4d6348603,
@@ -13303,7 +13324,7 @@ Transform:
   - {fileID: 144027424}
   - {fileID: 822297757}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2053837565
 Prefab:
@@ -13880,6 +13901,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 2049470909}
     m_Modifications:
+    - target: {fileID: 114037329510171362, guid: 79d237d2776c3ca459350b7c16174f77,
+        type: 2}
+      propertyPath: targetAccion.Array.size
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4500198858181536, guid: 79d237d2776c3ca459350b7c16174f77, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0.5
@@ -13912,9 +13938,29 @@ Prefab:
       propertyPath: m_RootOrder
       value: 50
       objectReference: {fileID: 0}
+    - target: {fileID: 114037329510171362, guid: 79d237d2776c3ca459350b7c16174f77,
+        type: 2}
+      propertyPath: botonGemelo
+      value: 
+      objectReference: {fileID: 1226063224}
+    - target: {fileID: 114037329510171362, guid: 79d237d2776c3ca459350b7c16174f77,
+        type: 2}
+      propertyPath: targetAccion.Array.data[0]
+      value: 
+      objectReference: {fileID: 1226063224}
+    - target: {fileID: 114037329510171362, guid: 79d237d2776c3ca459350b7c16174f77,
+        type: 2}
+      propertyPath: stuff
+      value: NextLevel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79d237d2776c3ca459350b7c16174f77, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &2129532156 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1780147669744262, guid: 79d237d2776c3ca459350b7c16174f77,
+    type: 2}
+  m_PrefabInternal: {fileID: 2129532155}
 --- !u!4 &2134322563 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4014040176862138, guid: ae775ab6fb4e82949a589fa4d6348603,

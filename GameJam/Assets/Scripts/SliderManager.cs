@@ -3,9 +3,9 @@ using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class SliderManager : MonoBehaviour
 {
-    public static SliderManager instance;
+    public static SliderManager instance = null;
 
-    public int CurrentLevel;
+    public int CurrentLevel = 1;
     public float tiempo = 30f; //TIEMPO EN SEGUNDOS PARA MORIR
     public float tiempoRecarga = 10f;
     public Slider sliderBlanco;
@@ -15,10 +15,14 @@ public class SliderManager : MonoBehaviour
     public PlayerManager managerBlanco;
     public PlayerManager managerNegro;
 
-    private void Start()
+
+    public int getCurrentLevel() { return CurrentLevel; }
+    private void Awake()
     {
         instance = this;
-
+    }
+    private void Start()
+    {
         SliderManager.instance.jugadorBlanco = GameObject.Find("2DPlayer1(Clone)");
         if (SliderManager.instance.jugadorBlanco != null)
         {
