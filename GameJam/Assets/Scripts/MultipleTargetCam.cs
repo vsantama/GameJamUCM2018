@@ -10,7 +10,7 @@ public class MultipleTargetCam : MonoBehaviour {
     public float distancex;
     public float distancey;
     public float camSize = 5f;
-    public float maxZoom = 7f;
+    public float maxZoom = 10f;
 
     private void Start()
     {  
