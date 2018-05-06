@@ -7,7 +7,8 @@ public class MultipleTargetCam : MonoBehaviour {
     public List<Transform> targets;
     private Camera mainCam;
     public Vector3 offset = new Vector3(0,0,-10);
-    public float distance;
+    public float distancex;
+    public float distancey;
     public float camSize = 5f;
     public float maxZoom = 7f;
 
@@ -34,17 +35,19 @@ public class MultipleTargetCam : MonoBehaviour {
     {
         if(targets.Count > 1)
         {
+            distancey = (targets[0].transform.position.y - targets[1].transform.position.y);
+            distancex = (targets[0].transform.position.x - targets[1].transform.position.x);
 
-            distance = (targets[0].transform.position.x - targets[1].transform.position.x);
-            if(Mathf.Sign(distance) == -1)
-            {
-                distance = -distance;
-            }
-            if(distance > 15)
+            if(Mathf.Sign(distancex) == -1)
+                distancex = -distancex;
+            if(Mathf.Sign(distancey) == -1)
+                distancey = -distancey;
+
+            if (distancex > 15 || distancey > 10)
             {
                 mainCam.orthographicSize = Mathf.Lerp(mainCam.orthographicSize, maxZoom, Time.deltaTime);
             }
-            if(distance < 15)
+            if(distancex < 15 || distancey > 10)
             {
                 mainCam.orthographicSize = Mathf.Lerp(mainCam.orthographicSize, camSize,  Time.deltaTime);
             }
