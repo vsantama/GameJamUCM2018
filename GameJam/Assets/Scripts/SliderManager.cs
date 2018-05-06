@@ -18,11 +18,19 @@ public class SliderManager : MonoBehaviour
     private void Start()
     {
         instance = this;
-        ResetearTiempo();
-    }
-    // Use this for initialization
-    void Awake()
-    {
+
+        SliderManager.instance.jugadorBlanco = GameObject.Find("2DPlayer1(Clone)");
+        if (SliderManager.instance.jugadorBlanco != null)
+        {
+         SliderManager.instance.managerBlanco = jugadorBlanco.GetComponent<PlayerManager>();
+        }
+
+        SliderManager.instance.jugadorNegro = GameObject.Find("2DPlayer2(Clone)");
+           if(SliderManager.instance.jugadorNegro != null)
+        {
+            SliderManager.instance.managerNegro = jugadorNegro.GetComponent<PlayerManager>();
+        }
+        SliderManager.instance.sliderNegro.value = 1;
     }
 
     // Update is called once per frame

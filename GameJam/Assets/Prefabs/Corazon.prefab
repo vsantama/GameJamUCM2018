@@ -21,9 +21,9 @@ GameObject:
   - component: {fileID: 4787172350176794}
   - component: {fileID: 212165641041569542}
   - component: {fileID: 114310284325209832}
-  - component: {fileID: 50767099737581092}
   - component: {fileID: 61075323751058818}
-  m_Layer: 0
+  - component: {fileID: 50767099737581092}
+  m_Layer: 10
   m_Name: Corazon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -37,7 +37,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 1807044931414736}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 5.285638, y: 0.09000003, z: 0}
+  m_LocalPosition: {x: 16.965029, y: -23.374212, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -99,7 +99,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 994f9d6310ee52c4796803269142a8f2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  direccion: {x: -1, y: 0, z: 0}
+  direccion: {x: 0, y: -1, z: 0}
   vel: 7
   rb: {fileID: 50767099737581092}
 --- !u!212 &212165641041569542
