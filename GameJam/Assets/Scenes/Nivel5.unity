@@ -657,6 +657,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 954502317}
     m_Modifications:
+    - target: {fileID: 114686266370994916, guid: 444aa5a7904a03948b4e61dea351c406,
+        type: 2}
+      propertyPath: targetAccion.Array.size
+      value: 5
+      objectReference: {fileID: 0}
     - target: {fileID: 4369478679092846, guid: 444aa5a7904a03948b4e61dea351c406, type: 2}
       propertyPath: m_LocalPosition.x
       value: 1.5
@@ -704,6 +709,16 @@ Prefab:
       propertyPath: targetAccion.Array.data[2]
       value: 
       objectReference: {fileID: 1414705682}
+    - target: {fileID: 114686266370994916, guid: 444aa5a7904a03948b4e61dea351c406,
+        type: 2}
+      propertyPath: targetAccion.Array.data[3]
+      value: 
+      objectReference: {fileID: 1225455316}
+    - target: {fileID: 114686266370994916, guid: 444aa5a7904a03948b4e61dea351c406,
+        type: 2}
+      propertyPath: targetAccion.Array.data[4]
+      value: 
+      objectReference: {fileID: 1678492078}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 444aa5a7904a03948b4e61dea351c406, type: 2}
   m_IsPrefabParent: 0
@@ -1583,6 +1598,7 @@ GameObject:
   serializedVersion: 5
   m_Component:
   - component: {fileID: 219209342}
+  - component: {fileID: 219209343}
   m_Layer: 0
   m_Name: GameObject
   m_TagString: Untagged
@@ -1606,6 +1622,18 @@ Transform:
   m_Father: {fileID: 954502317}
   m_RootOrder: 59
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &219209343
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 219209341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ddb8732879b5294ea7eb55381df2376, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  movimiento: {x: 4, y: 0, z: 0}
 --- !u!1001 &228559687
 Prefab:
   m_ObjectHideFlags: 0
@@ -1613,6 +1641,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 954502317}
     m_Modifications:
+    - target: {fileID: 114135075819816634, guid: 413a9ebaaf554294e977717ddd03a8be,
+        type: 2}
+      propertyPath: targetAccion.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4625191659397610, guid: 413a9ebaaf554294e977717ddd03a8be, type: 2}
       propertyPath: m_LocalPosition.x
       value: 19.5
@@ -6242,7 +6275,7 @@ Prefab:
     m_Modifications:
     - target: {fileID: 4199699275851988, guid: 269ae6cb8c1b60948a340dab6324a2fa, type: 2}
       propertyPath: m_LocalPosition.x
-      value: 16.5
+      value: 16.6
       objectReference: {fileID: 0}
     - target: {fileID: 4199699275851988, guid: 269ae6cb8c1b60948a340dab6324a2fa, type: 2}
       propertyPath: m_LocalPosition.y
@@ -6656,6 +6689,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4014040176862138, guid: ae775ab6fb4e82949a589fa4d6348603,
     type: 2}
   m_PrefabInternal: {fileID: 1524438458}
+--- !u!1 &1225455316 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1864083993499934, guid: 269ae6cb8c1b60948a340dab6324a2fa,
+    type: 2}
+  m_PrefabInternal: {fileID: 1124220962}
 --- !u!4 &1226505063 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4014040176862138, guid: ae775ab6fb4e82949a589fa4d6348603,
@@ -8713,6 +8751,11 @@ Prefab:
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: ae775ab6fb4e82949a589fa4d6348603, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &1678492078 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1864083993499934, guid: 269ae6cb8c1b60948a340dab6324a2fa,
+    type: 2}
+  m_PrefabInternal: {fileID: 826979589}
 --- !u!4 &1680003003 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4014040176862138, guid: ae775ab6fb4e82949a589fa4d6348603,
@@ -10483,6 +10526,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 954502317}
     m_Modifications:
+    - target: {fileID: 114686266370994916, guid: 444aa5a7904a03948b4e61dea351c406,
+        type: 2}
+      propertyPath: targetAccion.Array.size
+      value: 2
+      objectReference: {fileID: 0}
     - target: {fileID: 4369478679092846, guid: 444aa5a7904a03948b4e61dea351c406, type: 2}
       propertyPath: m_LocalPosition.x
       value: 2.5
