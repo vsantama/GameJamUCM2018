@@ -4,12 +4,12 @@ public class ObjetosActivables : MonoBehaviour {
 
     protected bool activated = false;
 
-    void Activate()
+    virtual protected void Activate()
     {
         activated = true;
     }
 
-    void Deactivate()
+    virtual protected void Deactivate()
     {
         activated = false;
     }

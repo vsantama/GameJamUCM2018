@@ -4,22 +4,29 @@ using UnityEngine;
 
 public class Puerta : ObjetosActivables {
 
-	// Use this for initialization
-	void Start () {
-		
-	}
+    Collider2D col2D;
+    SpriteRenderer sp;
+
+    // Use this for initialization
+    void Start () {
+        activated = false;
+        col2D = gameObject.GetComponent<Collider2D>();
+        sp = gameObject.GetComponent<SpriteRenderer>();
+
+    }
 	
 	// Update is called once per frame
 	void Update () {
 
-        if(activated)
+        if (activated)
         {
-            gameObject.SetActive(false);
+            col2D.enabled = false;
+            sp.enabled = false;
         }
-        else if(!activated)
+        else if (!activated)
         {
-            gameObject.SetActive(true);
+            col2D.enabled = true;
+            sp.enabled = true;
         }
-		
-	}
+    }
 }

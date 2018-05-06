@@ -14,8 +14,6 @@ public class Boton : MonoBehaviour {
 
             doStuff("Activate");
         }
-
-        Debug.Log("JAJAJAJAJAJA");
     }
     virtual public void doStuff(string stuff) {
         for(int i = 0; i< targetAccion.Length; i++)
