@@ -2865,7 +2865,7 @@ Prefab:
         type: 2}
       propertyPath: botonGemelo
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1734807172}
     - target: {fileID: 114037329510171362, guid: 79d237d2776c3ca459350b7c16174f77,
         type: 2}
       propertyPath: targetAccion.Array.data[0]
@@ -6106,6 +6106,26 @@ Prefab:
       value: 
       objectReference: {fileID: 1587257700396828, guid: e8da004e2fd93c84d99d4d5035d9b267,
         type: 2}
+    - target: {fileID: 224951422664055050, guid: 6ecca305944fb004aa9caf6e43db27ee,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224951422664055050, guid: 6ecca305944fb004aa9caf6e43db27ee,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224039205832011556, guid: 6ecca305944fb004aa9caf6e43db27ee,
+        type: 2}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 224039205832011556, guid: 6ecca305944fb004aa9caf6e43db27ee,
+        type: 2}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 6ecca305944fb004aa9caf6e43db27ee, type: 2}
   m_IsPrefabParent: 0
@@ -8097,6 +8117,11 @@ Transform:
   m_PrefabParentObject: {fileID: 4014040176862138, guid: ae775ab6fb4e82949a589fa4d6348603,
     type: 2}
   m_PrefabInternal: {fileID: 1723323647}
+--- !u!1 &1734807172 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1780147669744262, guid: 79d237d2776c3ca459350b7c16174f77,
+    type: 2}
+  m_PrefabInternal: {fileID: 544060051}
 --- !u!1001 &1757821787
 Prefab:
   m_ObjectHideFlags: 0
