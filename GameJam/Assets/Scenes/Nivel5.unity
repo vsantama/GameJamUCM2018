@@ -3757,9 +3757,24 @@ Prefab:
       propertyPath: m_RootOrder
       value: 6
       objectReference: {fileID: 0}
+    - target: {fileID: 114037329510171362, guid: 79d237d2776c3ca459350b7c16174f77,
+        type: 2}
+      propertyPath: botonGemelo
+      value: 
+      objectReference: {fileID: 634915145}
+    - target: {fileID: 114037329510171362, guid: 79d237d2776c3ca459350b7c16174f77,
+        type: 2}
+      propertyPath: targetAccion.Array.data[0]
+      value: 
+      objectReference: {fileID: 634915145}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79d237d2776c3ca459350b7c16174f77, type: 2}
   m_IsPrefabParent: 0
+--- !u!1 &634915145 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1780147669744262, guid: 79d237d2776c3ca459350b7c16174f77,
+    type: 2}
+  m_PrefabInternal: {fileID: 634915144}
 --- !u!1001 &636932372
 Prefab:
   m_ObjectHideFlags: 0
@@ -4460,7 +4475,8 @@ MonoBehaviour:
   targets:
   - {fileID: 194588038}
   offset: {x: 0, y: 0, z: -10}
-  distance: 0
+  distancex: 0
+  distancey: 0
   camSize: 5
   maxZoom: 10
 --- !u!81 &772903023
@@ -5675,7 +5691,7 @@ Transform:
   - {fileID: 245608983}
   - {fileID: 2141039584}
   m_Father: {fileID: 0}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &954654299 stripped
 Transform:

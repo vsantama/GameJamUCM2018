@@ -5,16 +5,16 @@ using UnityEngine.SceneManagement;
 
 public class Checkpoint : MonoBehaviour {
 
-    public GameObject sliderMg;
     int nextLevel;
     private void Start()
     {
-
         nextLevel = SliderManager.instance.getCurrentLevel() + 1;
     }
 
     void NextLevel()
     {
-        Debug.Log(nextLevel);
+        if (SceneManager.GetSceneByName("Nivel" + nextLevel.ToString()) != null)
+            SceneManager.LoadScene("Nivel" + nextLevel.ToString());
+        else SceneManager.LoadScene("MenuInicio");
     }
 }

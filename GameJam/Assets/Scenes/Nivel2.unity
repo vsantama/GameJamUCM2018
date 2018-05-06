@@ -2870,13 +2870,17 @@ Prefab:
         type: 2}
       propertyPath: targetAccion.Array.data[0]
       value: 
-      objectReference: {fileID: 1949042840033418, guid: 91d2faa81274cf143bcad18e972a64c5,
-        type: 2}
+      objectReference: {fileID: 1734807172}
     - target: {fileID: 114037329510171362, guid: 79d237d2776c3ca459350b7c16174f77,
         type: 2}
       propertyPath: targetAccion.Array.data[1]
       value: 
       objectReference: {fileID: 451053259}
+    - target: {fileID: 114037329510171362, guid: 79d237d2776c3ca459350b7c16174f77,
+        type: 2}
+      propertyPath: stuff
+      value: NextLevel
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 79d237d2776c3ca459350b7c16174f77, type: 2}
   m_IsPrefabParent: 0
@@ -3864,7 +3868,8 @@ MonoBehaviour:
   targets:
   - {fileID: 1278058097}
   offset: {x: 0, y: 0, z: -10}
-  distance: 0
+  distancex: 0
+  distancey: 0
   camSize: 5
   maxZoom: 10
 --- !u!81 &743399884
