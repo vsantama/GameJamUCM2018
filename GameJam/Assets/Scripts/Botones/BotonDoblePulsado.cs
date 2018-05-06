@@ -18,10 +18,6 @@ public class BotonDoblePulsado : Boton
 
     override public void OnTriggerEnter2D(Collider2D other)
     {
-        if(this.tag == "CheckPoint")
-        {
-            SceneManager.LoadScene(1);
-        }
         if (other.tag == "Player")
         {
             botonGemelo.BroadcastMessage("activarGemelo", SendMessageOptions.RequireReceiver);

@@ -203,8 +203,7 @@ MonoBehaviour:
   tiempoRecarga: 10
   sliderBlanco: {fileID: 114991263392657650}
   sliderNegro: {fileID: 114535358103457028}
-  jugadorBlanco: {fileID: 1380493712335792, guid: 159fd0cd4ff195443a04e176a26cfa81,
-    type: 2}
+  jugadorBlanco: {fileID: 0}
   jugadorNegro: {fileID: 1949042840033418, guid: 91d2faa81274cf143bcad18e972a64c5,
     type: 2}
   managerBlanco: {fileID: 0}
