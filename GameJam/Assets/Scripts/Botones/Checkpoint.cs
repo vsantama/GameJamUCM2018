@@ -14,7 +14,9 @@ public class Checkpoint : MonoBehaviour {
     void NextLevel()
     {
         if (SceneManager.GetSceneByName("Nivel" + nextLevel.ToString()) != null)
-            SceneManager.LoadScene("Nivel" + nextLevel.ToString());
+        {
+            SceneManager.LoadScene(nextLevel);
+        }
         else SceneManager.LoadScene("MenuInicio");
     }
 }
