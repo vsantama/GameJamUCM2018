@@ -3,7 +3,7 @@
 public class Boton : MonoBehaviour {
 
     public GameObject[] targetAccion = new GameObject[1];
-
+    public string stuff = "Activate";
 
     virtual public void OnTriggerEnter2D(Collider2D other)
     {
@@ -12,7 +12,7 @@ public class Boton : MonoBehaviour {
             if (targetAccion.Length == 0)
                 targetAccion[0] = other.gameObject;
 
-            doStuff("Activate");
+            doStuff(stuff);
         }
     }
     virtual public void doStuff(string stuff) {
