@@ -23,6 +23,7 @@ GameObject:
   - component: {fileID: 61882557203810338}
   - component: {fileID: 114037329510171362}
   - component: {fileID: 114783548314637610}
+  - component: {fileID: 95191872311772686}
   m_Layer: 0
   m_Name: Checkpoint
   m_TagString: CheckPoint
@@ -68,6 +69,23 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!95 &95191872311772686
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780147669744262}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 888f96805b328404e846f5dec1a31ad1, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
 --- !u!114 &114037329510171362
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -94,7 +112,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f352f8ac74156d74babffe25f59d86f7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sliderMg: {fileID: 0}
 --- !u!212 &212613043803180186
 SpriteRenderer:
   m_ObjectHideFlags: 1
@@ -130,7 +147,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 63d5b2c3ef76653448a4751d4b42b50e, type: 3}
-  m_Color: {r: 0.5735294, g: 0, b: 0.011866029, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
