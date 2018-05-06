@@ -29,7 +29,6 @@ public class MultipleTargetCam : MonoBehaviour {
         Vector3 newPos = centerPoint + offset;
 
         transform.position = newPos;
-        Debug.Log(centerPoint);
     }
     void Zoom()
     {

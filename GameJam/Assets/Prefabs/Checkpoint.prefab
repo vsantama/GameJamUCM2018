@@ -22,6 +22,7 @@ GameObject:
   - component: {fileID: 212613043803180186}
   - component: {fileID: 61882557203810338}
   - component: {fileID: 114037329510171362}
+  - component: {fileID: 114783548314637610}
   m_Layer: 0
   m_Name: Checkpoint
   m_TagString: CheckPoint
@@ -80,7 +81,20 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   targetAccion:
   - {fileID: 0}
+  stuff: Activate
   botonGemelo: {fileID: 0}
+--- !u!114 &114783548314637610
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 1780147669744262}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f352f8ac74156d74babffe25f59d86f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMg: {fileID: 0}
 --- !u!212 &212613043803180186
 SpriteRenderer:
   m_ObjectHideFlags: 1

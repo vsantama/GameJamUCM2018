@@ -2,17 +2,19 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
-public class Checkpoint : ObjetosActivables {
 
+public class Checkpoint : MonoBehaviour {
+
+    public GameObject sliderMg;
     int nextLevel;
-    public bool player1;
     private void Start()
-    {  
-      nextLevel = SliderManager.instance.CurrentLevel + 1;
+    {
+
+        nextLevel = SliderManager.instance.getCurrentLevel() + 1;
     }
-    private void OnTriggerEnter2D(Collider2D collision)
+
+    void NextLevel()
     {
         Debug.Log(nextLevel);
-        SceneManager.LoadScene("Nivel" + nextLevel);
     }
 }
