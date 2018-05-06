@@ -4,22 +4,27 @@ using UnityEngine;
 
 [RequireComponent (typeof(PlayerManager))]
 [RequireComponent (typeof(PlayerController))]
+[RequireComponent(typeof(AudioSource))]
 
 public class LanzarCorazon : MonoBehaviour
 {
     PlayerManager Manager;
     PlayerController Controller;
 
+    public AudioClip lanzamiento;
+    AudioSource Audio;
+
     public GameObject corazon;
     public KeyCode tecla;
 
     Vector3 pos;
-
+        
     // Use this for initialization
     void Start()
     {
         Manager = GetComponent<PlayerManager>();
         Controller = GetComponent<PlayerController>();
+        Audio = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -56,7 +61,10 @@ public class LanzarCorazon : MonoBehaviour
                     break;
             }
             corazon.transform.position = transform.position + pos;
+
             Instantiate(corazon);
+
+            Audio.PlayOneShot(lanzamiento);
             Manager.tieneCorazon = false;
         }
     }
