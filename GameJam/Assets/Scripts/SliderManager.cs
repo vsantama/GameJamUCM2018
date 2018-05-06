@@ -40,7 +40,7 @@ public class SliderManager : MonoBehaviour
     // Update is called once per frame
     void FixedUpdate()
     {
-        if(managerBlanco.tieneCorazon && !managerNegro.tieneCorazon)
+        if(managerBlanco.tieneCorazon)
         {
             sliderNegro.value -= Time.deltaTime / tiempo; //Disminuye vida
             if(sliderBlanco.value != 0)
@@ -48,13 +48,18 @@ public class SliderManager : MonoBehaviour
             sliderBlanco.value -= Time.deltaTime / tiempoRecarga; //Aumenta vida
             }
         }
-        else if(managerNegro.tieneCorazon && !managerBlanco.tieneCorazon)
+        else if(managerNegro.tieneCorazon)
         {
             sliderBlanco.value += Time.deltaTime / tiempo; //Disminuye vida 
             if(sliderNegro.value != 1)
             {
             sliderNegro.value += Time.deltaTime / tiempoRecarga; //Aumenta vida
             }
+        }
+        else if(!managerBlanco.tieneCorazon && !managerNegro.tieneCorazon)
+        {
+            sliderNegro.value -= Time.deltaTime / tiempo; //Disminuye vida
+            sliderBlanco.value += Time.deltaTime / tiempo; //Disminuye vida 
         }
         if(sliderNegro.value == 0 || sliderBlanco.value == 1)
         {

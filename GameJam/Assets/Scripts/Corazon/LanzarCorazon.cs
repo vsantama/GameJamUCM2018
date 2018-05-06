@@ -1,4 +1,4 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -64,7 +64,7 @@ public class LanzarCorazon : MonoBehaviour
 
             Instantiate(corazon);
 
-            Audio.PlayOneShot(lanzamiento);
+
             Manager.tieneCorazon = false;
         }
     }
