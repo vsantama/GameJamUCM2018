@@ -8,12 +8,12 @@ public class Checkpoint : MonoBehaviour {
     int nextLevel;
     private void Start()
     {
-        nextLevel = SliderManager.instance.getCurrentLevel() + 1;
+        nextLevel = SceneManager.GetActiveScene().buildIndex + 1;
     }
 
     void NextLevel()
     {
-        if (SceneManager.GetSceneByName("Nivel" + nextLevel.ToString()) != null)
+        if (SceneManager.GetSceneByBuildIndex(nextLevel) != null)
         {
             SceneManager.LoadScene(nextLevel);
         }
