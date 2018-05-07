@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -44,35 +45,41 @@ public class LanzarCorazon : MonoBehaviour
                 case KeyCode.W:
                 case KeyCode.UpArrow:
                     corazon.GetComponent<MoverCorazon>().direccion = Vector3.up;
-                    pos = new Vector3(0, 1, 0);
+                    pos = new Vector3(0, 1.3f, 0);
                     anim.SetTrigger("LanzarArriba");
                     break;
                 case KeyCode.S:
                 case KeyCode.DownArrow:
                     corazon.GetComponent<MoverCorazon>().direccion = Vector3.down;
-                    pos = new Vector3(0, -1, 0);
+                    pos = new Vector3(0, -0.3f, 0);
                     anim.SetTrigger("LanzarAbajo");
                     break;
                 case KeyCode.D:
                 case KeyCode.RightArrow:
                     corazon.GetComponent<MoverCorazon>().direccion = Vector3.right;
-                    pos = new Vector3(1, 0, 0);
+                    pos = new Vector3(1, 1, 0);
                     anim.SetTrigger("LanzarDcha");
                     break;
                 case KeyCode.A:
                 case KeyCode.LeftArrow:
                     corazon.GetComponent<MoverCorazon>().direccion = Vector3.left;
-                    pos = new Vector3(-1, 0, 0);
+                    pos = new Vector3(-1, 1, 0);
                     anim.SetTrigger("LanzarIzqu");
                     break;
             }
-            anim.SetTrigger("Lanzar");
+            //anim.SetTrigger("Lanzar");
             corazon.transform.position = transform.position + pos;
 
-            Instantiate(corazon);
+            Invoke("LanzCorazon", 1f);
 
 
             Manager.tieneCorazon = false;
         }
     }
+
+    void LanzCorazon()
+    {
+        Instantiate(corazon);
+    }
 }
+
